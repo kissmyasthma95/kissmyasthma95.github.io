@@ -146,19 +146,18 @@
                 <i class="fas fa-sun"></i>
             </button>
             <h1 class="header-title text-4xl md:text-5xl font-extrabold mb-2">Singapore Adventure</h1>
-            <p class="header-subtitle text-xl md:text-2xl font-medium">Reabal & Sabah</p>
+            <p class="header-subtitle text-xl md:text-2xl font-medium">Rey & Saby</p>
             <p class="header-date text-md">May 28 - June 2, 2025</p>
         </header>
 
         <div id="keyInfoAccordion" class="mb-10 space-y-4"></div>
-        {/* Main Checklists Accordion has been removed from HTML as per user request */}
         <div id="simplifiedIconLegend" class="mb-8 p-4 md:p-5 legend-bg rounded-xl shadow-lg"></div>
         <div id="dayTabsContainer" class="mb-8 sticky top-0 z-10 sticky-header-bg py-3 -mx-4 px-4 shadow-md">
             <div class="flex space-x-2 overflow-x-auto pb-2 justify-center"></div>
         </div>
         <div id="itineraryContent" class="space-y-4"></div>
         <footer class="text-center text-sm text-content-tertiary py-12 mt-12">
-            <p>Wishing you an amazing trip, Reabal & Sabah!</p>
+            <p>Wishing you an amazing trip, Rey & Saby!</p>
             <p id="lastUpdated" class="mt-1"></p>
         </footer>
     </div>
@@ -176,11 +175,8 @@
         // --- DATA (Ensure this is the complete, updated data structure) ---
         itineraryData.flightDetails = {
             confirmation: "MGE7VH", airline: "Scoot",
-            departing: { from: "Sydney (SYD)", to: "Singapore (SIN)", date: "Wed, May 28", flight: "TR3", time: "12:50 PM - 7:15 PM", duration: "8h 25m", class: "Economy", passengers: [{ name: "Sabah Naseema Shehzad", baggage: "1 personal item, 1 carry-on (10kg), 1 checked bag (20kg)" },{ name: "Reabal Ismail Najjar", baggage: "1 personal item, 1 carry-on (10kg), No checked bags" }] },
-            returning: { from: "Singapore (SIN)", to: "Sydney (SYD)", date: "Mon, Jun 2", flight: "TR12", time: "10:00 AM - 7:30 PM", duration: "7h 30m", class: "Economy", passengers: [{ name: "Sabah Naseema Shehzad", baggage: "1 personal item, 1 carry-on (10kg), 1 checked bag (20kg)" },{ name: "Reabal Ismail Najjar", baggage: "1 personal item, 1 carry-on (10kg), No checked bags" }] }
         };
         itineraryData.hotelDetails = {
-            name: "The Clan Hotel Singapore by Far East Hospitality", address: "10 Cross Street, Singapore 048417", phone: "+65 6881 8888", checkIn: "Wednesday, 28 May 2025 (15:00-00:00)", checkOut: "Monday, 2 June 2025 (12:00)", guestName: "Reabal Najjar", bookingDuration: "5 nights, 1 room", checkInNumbers: ["867336942", "2505221100308986297 (recommended)"], cost: "AUD 2,268.86 (Paid, Non-refundable)", meals: "Breakfast available at AUD 52 per person", cancellation: "From 10:59 on 22 May 2025: AUD 2,269 (Cancellation timeline in property's local time zone +08)",
             mapLink: "https://www.google.com/maps/place/The+Clan+Hotel+Singapore+by+Far+East+Hospitality/@1.2820509,103.8459572,17z"
         };
         itineraryData.grabRules = [
