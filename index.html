@@ -1,0 +1,1080 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Reabal &amp; Sabah's Singapore Adventure&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>html { scroll-behavior: smooth; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>-webkit-tap-highlight-color: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s ease, color 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* --- Base Colors &amp; Theme Variables --- */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--bg-dark: #0f172a; /* slate-900 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--card-bg-dark: #1e293b; /* slate-800 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--text-primary-dark: #e2e8f0; /* slate-200 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--text-secondary-dark: #94a3b8; /* slate-400 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--text-tertiary-dark: #64748b; /* slate-500 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--border-dark: #334155; /* slate-700 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--accent-sky-dark: #38bdf8; /* sky-500 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--accent-emerald-dark: #34d399; /* emerald-400 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--accent-rose-dark: #f43f5e; /* rose-500 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--accent-blue-dark: #60a5fa; /* blue-400 */</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>--bg-light: #f1f5f9; /* slate-100 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--card-bg-light: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--text-primary-light: #1e293b; /* slate-800 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--text-secondary-light: #475569; /* slate-600 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--text-tertiary-light: #64748b; /* slate-500 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--border-light: #e2e8f0; /* slate-200 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--accent-sky-light: #0284c7; /* sky-600 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--accent-emerald-light: #059669; /* emerald-600 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--accent-rose-light: #e11d48; /* rose-600 */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>--accent-blue-light: #3b82f6; /* blue-500 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* --- Dark Mode Styles --- */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode { background-color: var(--bg-dark); color: var(--text-primary-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .header-title { color: var(--accent-sky-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .header-subtitle { color: var(--text-secondary-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .header-date { color: var(--text-tertiary-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .accordion-bg, .dark-mode .event-card-bg, .dark-mode .legend-bg, .dark-mode .checklist-item-bg { background-color: var(--card-bg-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .accordion-summary-text, .dark-mode .legend-title-text { color: var(--accent-sky-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .accordion-border, .dark-mode .event-border { border-color: var(--border-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .text-content-primary { color: var(--text-primary-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .text-content-secondary { color: var(--text-secondary-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .text-content-tertiary { color: var(--text-tertiary-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .tab-active { background-color: var(--accent-sky-dark); color: #ffffff; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .tab-inactive { background-color: var(--border-dark); color: var(--text-secondary-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .tab-inactive:hover { background-color: #475569; } /* slate-600 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .sticky-header-bg { background-color: var(--bg-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .budget-tag { background-color: var(--accent-emerald-dark); color: #064e3b; } /* emerald-400 bg, dark emerald text */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .pro-tip-do, .dark-mode .challenge-title, .dark-mode .recommendation-title { color: var(--accent-emerald-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .pro-tip-avoid { color: var(--accent-rose-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .map-button { background-color: var(--accent-emerald-dark); color: #064e3b; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .map-button:hover { background-color: #6ee7b7; } /* emerald-300 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .checklist-icon-unchecked { color: var(--accent-sky-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .checklist-icon-checked { color: var(--accent-emerald-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .checklist-text-checked { color: var(--text-tertiary-dark); text-decoration: line-through; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .theme-toggle-icon { color: var(--text-secondary-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .theme-toggle-icon:hover { color: var(--accent-sky-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .event-quick-info { color: #cbd5e1; } /* slate-300 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .challenge-card { background-color: rgba(52, 211, 153, 0.05); border-left-color: var(--accent-emerald-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .recommendation-card { background-color: rgba(96, 165, 250, 0.05); border-left-color: var(--accent-blue-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .detail-item i { color: var(--accent-blue-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .event-card-border-travel { border-left-color: var(--accent-blue-dark); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .event-card-border-food { border-left-color: #f97316; } /* orange-500 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .event-card-border-activity { border-left-color: #a855f7; } /* purple-500 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .event-card-border-info { border-left-color: #14b8a6; } /* teal-500 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode .event-card-border-accommodation { border-left-color: #14b8a6; } /* teal-500 - Using same as info for now */</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* --- Light Mode Styles --- */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode { background-color: var(--bg-light); color: var(--text-primary-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .header-title { color: var(--accent-sky-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .header-subtitle { color: var(--text-secondary-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .header-date { color: var(--text-tertiary-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .accordion-bg, .light-mode .event-card-bg, .light-mode .legend-bg, .light-mode .checklist-item-bg { background-color: var(--card-bg-light); box-shadow: 0 1px 3px 0 rgba(0,0,0,0.07), 0 1px 2px 0 rgba(0,0,0,0.03); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .accordion-summary-text, .light-mode .legend-title-text { color: var(--accent-sky-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .accordion-border, .light-mode .event-border { border-color: var(--border-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .text-content-primary { color: var(--text-primary-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .text-content-secondary { color: var(--text-secondary-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .text-content-tertiary { color: var(--text-tertiary-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .tab-active { background-color: var(--accent-sky-light); color: #ffffff; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .tab-inactive { background-color: var(--border-light); color: var(--text-secondary-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .tab-inactive:hover { background-color: #cbd5e1; } /* slate-300 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .sticky-header-bg { background-color: var(--bg-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .budget-tag { background-color: var(--accent-emerald-light); color: #ffffff; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .pro-tip-do, .light-mode .challenge-title, .light-mode .recommendation-title { color: var(--accent-emerald-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .pro-tip-avoid { color: var(--accent-rose-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .map-button { background-color: var(--accent-emerald-light); color: #ffffff; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .map-button:hover { background-color: #047857; } /* emerald-700 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .checklist-icon-unchecked { color: var(--accent-sky-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .checklist-icon-checked { color: var(--accent-emerald-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .checklist-text-checked { color: var(--text-tertiary-light); text-decoration: line-through; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .theme-toggle-icon { color: var(--text-secondary-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .theme-toggle-icon:hover { color: var(--accent-sky-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .event-quick-info { color: var(--text-secondary-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .challenge-card { background-color: #d1fae5; border-left-color: var(--accent-emerald-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .recommendation-card { background-color: #eff6ff; border-left-color: var(--accent-blue-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .detail-item i { color: var(--accent-blue-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .event-card-border-travel { border-left-color: var(--accent-blue-light); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .event-card-border-food { border-left-color: #f59e0b; } /* amber-500 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .event-card-border-activity { border-left-color: #8b5cf6; } /* violet-500 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .event-card-border-info { border-left-color: #0d9488; } /* teal-600 */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode .event-card-border-accommodation { border-left-color: #0d9488; } /* teal-600 */</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* --- General Styles --- */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>details &gt; summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; padding: 1rem; transition: background-color 0.15s ease-in-out; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>details &gt; summary:hover { background-color: rgba(128,128,128,0.05); } /* Subtle hover for summaries */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>details &gt; summary::-webkit-details-marker { display: none; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.accordion-icon, .event-accordion-icon { transition: transform 0.25s ease-in-out; display: inline-block; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>details[open] &gt; summary .accordion-icon, details[open] &gt; summary .event-accordion-icon { transform: rotate(180deg); }</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-summary-content { display: flex; align-items: center; flex-grow: 1; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-details-content-wrapper { max-height: 0; overflow: hidden; transition: max-height 0.35s ease-out; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>details[open] .event-details-content-wrapper { max-height: 3000px; /* Increased max-height further */ transition: max-height 0.5s ease-in; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-details-content { padding: 0 1rem 1rem 1rem; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>::-webkit-scrollbar { width: 8px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode ::-webkit-scrollbar-track { background: #1e293b; }<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode ::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.dark-mode ::-webkit-scrollbar-thumb:hover { background: #64748b; }<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode ::-webkit-scrollbar-track { background: #e2e8f0; }<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.light-mode ::-webkit-scrollbar-thumb:hover { background: #64748b; }<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.detail-list { list-style: none; padding-left: 0; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.detail-item { display: flex; align-items: flex-start; margin-bottom: 0.5rem; }<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.detail-item i { margin-right: 0.75rem; width: 1rem; text-align: center; margin-top: 0.125rem; opacity: 0.8; }<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.event-card-bg { border-left-width: 4px; }</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="dark-mode"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container mx-auto p-4 md:p-6 max-w-2xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;header class="text-center pt-6 pb-10 relative"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button id="themeToggle" class="theme-toggle-icon absolute top-2 right-0 md:top-4 md:right-0 p-2 rounded-full focus:outline-none z-20 text-2xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;i class="fas fa-sun"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="header-title text-4xl md:text-5xl font-extrabold mb-2"&gt;Singapore Adventure&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="header-subtitle text-xl md:text-2xl font-medium"&gt;Reabal &amp; Sabah&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="header-date text-md"&gt;May 28 - June 2, 2025&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="keyInfoAccordion" class="mb-10 space-y-4"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>{/* Main Checklists Accordion has been removed from HTML as per user request */}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="simplifiedIconLegend" class="mb-8 p-4 md:p-5 legend-bg rounded-xl shadow-lg"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="dayTabsContainer" class="mb-8 sticky top-0 z-10 sticky-header-bg py-3 -mx-4 px-4 shadow-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex space-x-2 overflow-x-auto pb-2 justify-center"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="itineraryContent" class="space-y-4"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;footer class="text-center text-sm text-content-tertiary py-12 mt-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Wishing you an amazing trip, Reabal &amp; Sabah!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p id="lastUpdated" class="mt-1"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const simplifiedIconLegendData = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ icon: "fas fa-map-marker-alt", category: "Location &amp; Travel" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ icon: "fas fa-utensils", category: "Food &amp; Drink" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ icon: "fas fa-star", category: "Activities &amp; Attractions" },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ icon: "fas fa-info-circle", category: "Info &amp; Notes" }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>const itineraryData = { /* ... All data including new fields like daySummary and event category ... */ };</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// --- DATA (Ensure this is the complete, updated data structure) ---</p>
+<p class="p1"><span class="Apple-converted-space">        </span>itineraryData.flightDetails = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>confirmation: "MGE7VH", airline: "Scoot",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>departing: { from: "Sydney (SYD)", to: "Singapore (SIN)", date: "Wed, May 28", flight: "TR3", time: "12:50 PM - 7:15 PM", duration: "8h 25m", class: "Economy", passengers: [{ name: "Sabah Naseema Shehzad", baggage: "1 personal item, 1 carry-on (10kg), 1 checked bag (20kg)" },{ name: "Reabal Ismail Najjar", baggage: "1 personal item, 1 carry-on (10kg), No checked bags" }] },</p>
+<p class="p1"><span class="Apple-converted-space">            </span>returning: { from: "Singapore (SIN)", to: "Sydney (SYD)", date: "Mon, Jun 2", flight: "TR12", time: "10:00 AM - 7:30 PM", duration: "7h 30m", class: "Economy", passengers: [{ name: "Sabah Naseema Shehzad", baggage: "1 personal item, 1 carry-on (10kg), 1 checked bag (20kg)" },{ name: "Reabal Ismail Najjar", baggage: "1 personal item, 1 carry-on (10kg), No checked bags" }] }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p1"><span class="Apple-converted-space">        </span>itineraryData.hotelDetails = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>name: "The Clan Hotel Singapore by Far East Hospitality", address: "10 Cross Street, Singapore 048417", phone: "+65 6881 8888", checkIn: "Wednesday, 28 May 2025 (15:00-00:00)", checkOut: "Monday, 2 June 2025 (12:00)", guestName: "Reabal Najjar", bookingDuration: "5 nights, 1 room", checkInNumbers: ["867336942", "2505221100308986297 (recommended)"], cost: "AUD 2,268.86 (Paid, Non-refundable)", meals: "Breakfast available at AUD 52 per person", cancellation: "From 10:59 on 22 May 2025: AUD 2,269 (Cancellation timeline in property's local time zone +08)",</p>
+<p class="p1"><span class="Apple-converted-space">            </span>mapLink: "https://www.google.com/maps/place/The+Clan+Hotel+Singapore+by+Far+East+Hospitality/@1.2820509,103.8459572,17z"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p1"><span class="Apple-converted-space">        </span>itineraryData.grabRules = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>"&lt;20 min walk? Walk it. Anything farther: book Grab.", "Check surge: if &gt;S$2 surge, switch to Gojek.", "Always pin hotel as favourite for one-tap rides home.", "Cashless: use Wise in Apple Pay; avoid CommBank surcharge."</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>itineraryData.emergencyContacts = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ name: "Police / Ambulance", number: "999 / 995" }, { name: "Hotel (The Clan)", number: "+65 6881 8888" }, { name: "Aussie High Commission", number: "+65 6836 4100" }, { name: "Lost Wise card", number: "+44 203 409 1100" }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Main checklists data removed as the UI section was removed.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// itineraryData.checklists = { ... };<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>itineraryData.days = [</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                </span>day: 0, dateShort: "Wed 28", dateLong: "Wednesday, 28 May", title: "Arrival, Hawkers, Hard Rock",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>daySummary: "Welcome to Singapore! Today is all about a smooth arrival, settling into the stylish Clan Hotel, diving straight into the local food scene at Maxwell Food Centre, and capping the night with some rock 'n' roll vibes.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>events: [</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "19:15", action: "Land at Changi Airport (T1)", quickInfo: "Arrival &amp; Immigration", category: "travel", categoryIcon: "fas fa-plane-arrival",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Welcome to Singapore! Proceed through automated e-gates for immigration. Changi is renowned for its efficiency.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>estDuration: "45-60 mins (incl. baggage)", transport: "On foot within airport",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Ensure your SG Arrival Card was submitted online within 3 days prior to arrival. Connect to Changi's free WiFi. Baggage claim is usually quick; expect bags by 20:00.",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "N/A", cost: "" }] }, mapLink: "https://www.google.com/maps/place/Singapore+Changi+Airport+(SIN)/@1.3644202,103.9915308,17z", openingHours: "24/7",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>eventChecklist: [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ id: 'event0-0-task1', text: "Clear e-gates smoothly", completed: false },</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ id: 'event0-0-task2', text: "Collect all baggage", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>]</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "20:00", action: "Withdraw SGD at ATM", quickInfo: "Get Local Cash", category: "info", categoryIcon: "fas fa-money-bill-wave",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Withdraw Singapore Dollars for immediate expenses like food and small purchases.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>estDuration: "5-10 mins", transport: "Located in arrivals hall (after customs)",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Use a multi-currency card like Wise for better rates. Always select 'Decline Conversion' or 'Charge in SGD' if the ATM offers to convert for you, to avoid unfavorable ATM exchange rates.",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Withdrawal Amount", cost: "S$250" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>eventChecklist: [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ id: 'event0-1-task1', text: "Withdraw S$250", completed: false },</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ id: 'event0-1-task2', text: "Decline ATM conversion", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>]</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "20:05", action: "Grab to The Clan Hotel", quickInfo: "Ride to Hotel", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Take a comfortable Grab ride to your hotel in the CBD.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>estDuration: "~25-35 mins (depending on traffic)", transport: "Grab (Ride-hailing app)",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>address: "10 Cross Street, Singapore 048417",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Book via the Grab app once connected to WiFi. Pick-up points are clearly marked at T1 Arrivals (e.g., Door 5). Have hotel address ready.",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$25-35" }] }, mapLink: "https://www.google.com/maps/place/The+Clan+Hotel+Singapore+by+Far+East+Hospitality/@1.2820509,103.8459572,17z",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>eventChecklist: [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ id: 'event0-2-task1', text: "Book Grab while bags roll", completed: false },</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ id: 'event0-2-task2', text: "Confirm drop-off at The Clan Hotel", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>]</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "20:40", action: "Hotel Check-in &amp; Freshen Up", quickInfo: "Settle In!", category: "accommodation", categoryIcon: "fas fa-key",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Check into The Clan Hotel and take a moment to freshen up after your flight.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>estDuration: "20-30 mins", transport: "N/A",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Have passports, booking confirmation (Check-in numbers: 867336942 / 2505221100308986297), and any required ID ready. Ask front desk for extra water bottles if needed.",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "N/A", cost: "" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>eventChecklist: [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ id: 'event0-3-task1', text: "Present Photo ID &amp; Check-in Number", completed: false },</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ id: 'event0-3-task2', text: "Ask for extra water bottles", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>]</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "21:10", action: "Dinner at Maxwell Food Centre", quickInfo: "Iconic Hawker Feast!", category: "food", categoryIcon: "fas fa-utensils",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Experience authentic Singaporean hawker culture with a wide variety of delicious and affordable local dishes.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>estDuration: "1 - 1.5 hours", transport: "Walk (5-7 mins from The Clan Hotel)",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>address: "1 Kadayanallur Street, Singapore 069184",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Varies by stall (many open till late, but popular ones might sell out earlier)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Find an empty table first and note its number before ordering from stalls ('chope' your table with a tissue packet if you have one!). Bring cash as not all stalls accept cards.",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [ { name: "Tian Tian Chicken Rice", cost: "~S$5-7" }, { name: "Hum Jin Pang (Doughnuts)", cost: "~S$1-2 for a few" }, { name: "Other dishes/drinks", cost: "~S$5-10" }, { name: "Total per person", cost: "~S$15-25" } ]},</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Food", item: "Tian Tian Hainanese Chicken Rice (Stall #10)", note: "Michelin Bib Gourmand, expect a queue but it moves fast." }, { type: "Food", item: "Zhen Zhen Porridge (Stall #54)", note: "Silky smooth Cantonese-style porridge." }, { type: "Food", item: "Hum Jin Pang (various stalls)", note: "Sweet or salty fried dough fritters for dessert." }, { type: "Drink", item: "Fresh Sugarcane Juice", note: "Refreshing!" } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/F97316/FFFFFF?text=Maxwell+Food+Centre+Stalls", mapLink: "https://www.google.com/maps/place/Maxwell+Food+Centre/@1.2804563,103.8443089,17z",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge0-4', name: "Hawker Hustle Hero", description: "Reabal: Amidst the delicious chaos of Maxwell, find a moment to sincerely thank Sabah for planning this amazing 30th birthday trip!", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "22:40", action: "Hard Rock Café Orchard", quickInfo: "Rock 'n' Roll Drinks", category: "activity", categoryIcon: "fas fa-guitar",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Enjoy some music-themed ambiance, grab a drink, and check out the rock memorabilia.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>estDuration: "1 - 1.5 hours", transport: "Grab (~10-15 mins from Maxwell)",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>address: "HPL House, #02-01 &amp; #03-01, 50 Cuscaden Road, Singapore 249724",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Restaurant typically till 22:30 or 23:00, Bar might be later. Rock Shop hours vary.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Confirm kitchen closing time if you plan to eat. The Rock Shop is great for souvenirs.",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [ { name: "Grab Fare", cost: "~S$10-15" }, { name: "Drinks/Souvenirs", cost: "S$20-50+ pp (variable)" } ]}, mapLink: "https://www.google.com/maps/place/Hard+Rock+Cafe+Singapore/@1.3057518,103.8291849,17z",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>eventChecklist: [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ id: 'event0-5-task1', text: "Check kitchen closing time (22:30)", completed: false },</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ id: 'event0-5-task2', text: "Visit Rock Shop", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>]</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "00:00", action: "Grab back to hotel", quickInfo: "End of Day 0", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Head back to The Clan Hotel for a well-deserved rest.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>estDuration: "~10-15 mins", transport: "Grab",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Ensure your Grab app has The Clan Hotel saved as a favorite for easy booking.",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$10-15" }] }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "00:15", action: "Lights Out", quickInfo: "Recharge!", category: "info", categoryIcon: "fas fa-bed",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Get a good night's sleep to prepare for a packed day tomorrow.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>estDuration: "N/A", transport: "N/A",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Charge all your devices: phones, power bank, camera batteries!",<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "N/A", cost: "" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>eventChecklist: [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ id: 'event0-7-task1', text: "Charge power bank", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>]</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>]</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ // DAY 1</p>
+<p class="p1"><span class="Apple-converted-space">                </span>day: 1, dateShort: "Thu 29", dateLong: "Thursday, 29 May", title: "Science, Skyline &amp; Sensory Dining", // Updated title</p>
+<p class="p1"><span class="Apple-converted-space">                </span>daySummary: "Today, we blend intellectual curiosity with artistic flair! Explore the Science Centre, snap unique photos at Café Monochrome, marvel at Marina Bay Sands' art and views, and conclude with an extraordinary sensory dinner at NOX.", // Updated summary</p>
+<p class="p1"><span class="Apple-converted-space">                </span>events: [</p>
+<p class="p1"><span class="Apple-converted-space">                     </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "08:30", action: "Hotel Breakfast / Local Kopi &amp; Kaya Toast", quickInfo: "Morning Fuel!", category: "food", categoryIcon: "fas fa-mug-saucer",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Start your day with a hearty breakfast at the hotel or immerse yourself in a local Singaporean breakfast tradition.", estDuration: "45-60 mins", transport: "N/A (hotel) or short walk",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "If opting for local, Ya Kun Kaya Toast or Killiney Kopitiam are classic choices for kaya (coconut jam) toast, soft-boiled eggs, and 'kopi' (local coffee). The Clan Hotel breakfast is AUD 52 pp if not included. Load up on carbs for a long day!",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [ { name: "Hotel Breakfast (if chosen)", cost: "~S$48 pp (AUD 52)" }, { name: "Local Breakfast (if chosen)", cost: "~S$8-15 pp" } ]},</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Local Breakfast", item: "Kaya Toast Set at Ya Kun", note: "Includes kaya toast, soft-boiled eggs, and a hot drink." }, { type: "Local Drink", item: "Kopi C Siu Dai", note: "Coffee with evaporated milk, less sugar." } ]</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "09:30", action: "Grab to Science Centre Singapore", quickInfo: "Journey to Discovery", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Head to Jurong East for a morning of interactive science exhibits.", estDuration: "~30-40 mins (travel)", transport: "Grab (recommended for directness)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>address: "15 Science Centre Road, Singapore 609081",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Have e-tickets ready for smoother entry (usually Gate A). Traffic can be unpredictable, so allow a buffer.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$22-30" }] }, mapLink: "https://www.google.com/maps/place/Science+Centre+Singapore/@1.3330521,103.733957,17z",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>eventChecklist: [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ id: 'event1-1-task1', text: "Show e-tickets at Gate A", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>]</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "10:15 - 14:15", action: "Explore Science Centre", quickInfo: "Hands-on Science Fun!", category: "activity", categoryIcon: "fas fa-flask",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Engage with numerous interactive galleries covering various scientific themes. Great for all ages.", estDuration: "4 hours", openingHours: "Typically 10:00 - 17:00 (confirm specific day)", transport: "On-site (walking)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Prioritize exhibits based on interest. Wear comfortable shoes! Check daily schedule for shows like the Fire Tornado or Tesla Coil demonstration.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Entrance Tickets", cost: "Pre-booked" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Exhibit", item: "Mind's Eye", note: "Fascinating optical illusions." }, { type: "Exhibit", item: "Mirror Maze", note: "Get lost in reflections." }, { type: "Exhibit", item: "Laser Maze Challenge", note: "Test your spy skills." }, { type: "Show", item: "Climate Change Show", note: "Check timings (e.g., 11:00 &amp; 14:00), informative." }, { type: "Optional", item: "Omni-Theatre", note: "Requires separate ticket; immersive dome screen movies." } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>proTip: { move: "Buy an ice cream or drink at the Kinetic Garden café (outdoors) for a shaded break.", avoid: "Leaving the Mirror Maze for peak times – queues can get long, especially with school groups." },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/A855F7/FFFFFF?text=Science+Centre+Interactive+Fun",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge1-2', name: "Optical Illusionist", description: "Sabah: After the Mind's Eye exhibit, try to explain one of the optical illusions to Reabal as if you're a magician revealing a trick.", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "14:15", action: "Grab to Café Monochrome (Bugis)", quickInfo: "Unique 2D Cafe", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Travel to the Bugis area for a visually striking cafe experience.", estDuration: "~20-30 mins (travel)", transport: "Grab",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>address: "291 Jalan Besar, Singapore 208954",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "This cafe is designed to look like a 2D drawing – perfect for unique photos!",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$14-20" }] }, mapLink: "https://www.google.com/maps/place/Cafe+Monochrome/@1.3088839,103.8560054,17z"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "14:45 - 15:30", action: "Coffee &amp; Snack at Café Monochrome", quickInfo: "Insta-worthy Break", category: "food", categoryIcon: "fas fa-coffee",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Enjoy a coffee and a small bite in this black-and-white wonderland.", estDuration: "45 mins", openingHours: "Check their social media for exact hours (typically afternoon to evening).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Their specialty drinks and desserts often match the theme. Keep your receipt; no service charge is a plus.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Coffee &amp; Snack per person", cost: "~S$15-25" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Drink", item: "Themed Latte/Mocktail", note: "Often visually appealing." }, { type: "Dessert", item: "Monochrome Cake/Pastry", note: "If available, complements the experience." } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/212121/FFFFFF?text=Cafe+Monochrome+2D+Interior"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "15:30", action: "Grab to ArtScience Museum (MBS)", quickInfo: "To Marina Bay Sands", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Head to the iconic Marina Bay Sands complex.", estDuration: "~10-15 mins (travel)", transport: "Grab",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>address: "6 Bayfront Ave, Singapore 018974 (ArtScience Museum)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Ask to be dropped directly at the ArtScience Museum entrance for convenience.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$10-15" }] }, mapLink: "https://www.google.com/maps/place/ArtScience+Museum/@1.2861891,103.8591616,17z"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "15:45 - 17:45", action: "ArtScience Museum: Future World", quickInfo: "Digital Art Magic", category: "activity", categoryIcon: "fas fa-palette",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Immerse yourselves in the stunning interactive digital art installations by teamLab.", estDuration: "2 hours", openingHours: "Typically 10:00 - 19:00 (last entry 18:00, confirm specific day).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Allow plenty of time for 'Crystal Universe' and 'Transcending Boundaries'. The last entry to some interactive zones might be slightly before the overall last entry time.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Entrance Tickets", cost: "Pre-booked" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Installation", item: "Crystal Universe", note: "Walk through a galaxy of lights." }, { type: "Installation", item: "Sketch Aquarium/Town", note: "Draw sea creatures or vehicles and see them come to life on screen." }, { type: "Installation", item: "Light Ball Orchestra", note: "Interact with colorful, sound-emitting balls." } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>proTip: { move: "Use the small lockers (around S$5) near the entrance to free your hands for better interaction with exhibits.", avoid: "Using flash photography – it diminishes the experience for others and is often prohibited." },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/9C27B0/FFFFFF?text=Future+World+Crystal+Universe",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge1-6', name: "Digital Destiny Weavers", description: "In 'Sketch Aquarium' or 'Sketch Town', try to create characters that represent both of you and see if you can spot them interacting on the big screen.", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "17:50 - 18:30", action: "Walk to MBS SkyPark Observation Deck", quickInfo: "Sunset Views Prep", category: "activity", categoryIcon: "fas fa-binoculars",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Ascend to the top of Marina Bay Sands for breathtaking panoramic views as sunset approaches.", estDuration: "40 mins (incl. walk &amp; queue)", transport: "Walk through The Shoppes at Marina Bay Sands / Hotel Tower 3",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Typically 11:00 - 21:00 (confirm specific day). Pre-book 18:00 slot.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Follow signs for 'SkyPark Observation Deck' (usually via Hotel Tower 3). The queue moves fairly quickly with pre-booked tickets.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "SkyPark Tickets", cost: "Pre-booked" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>proTip: { move: "For the best Gardens by the Bay view, position yourselves on the left side (facing the city). For the CBD/port view, head to the right. Arrive a bit before your slot to maximize sunset viewing.", avoid: "Buying drinks at the CÉ LA VI bar section if you're only on the public observation deck – they are very expensive. You have a dedicated CÉ LA VI visit later." },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>mapLink: "https://www.google.com/maps/place/Marina+Bay+Sands+SkyPark+Observation+Deck/@1.2827978,103.8609267,17z"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                     </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "18:30 - 19:30", action: "Sunset at SkyPark &amp; The Shoppes Stroll", quickInfo: "Golden Hour &amp; Retail", category: "activity", categoryIcon: "fas fa-shopping-bag",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Enjoy the sunset from the SkyPark, then take a leisurely stroll through The Shoppes at Marina Bay Sands.", estDuration: "1 hour", transport: "Walk",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "After soaking in the views, explore the luxury retail stores, see the indoor canal with sampan rides, or grab a quick bubble tea.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Bubble Tea (optional)", cost: "~S$8-12" }] }, mapLink: "https://www.google.com/maps/place/The+Shoppes+at+Marina+Bay+Sands/@1.2841693,103.8590695,17z" // The Shoppes</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "19:40", action: "Secure Spot for Spectra Light Show", quickInfo: "Best Viewing Position", category: "info", categoryIcon: "fas fa-info-circle",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Find a good vantage point at the Event Plaza for the Spectra show.", estDuration: "20 mins (waiting)", transport: "Walk from The Shoppes (2-3 mins)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "The official viewing plaza in front of the Louis Vuitton 'island' store offers the most direct and unobstructed views. Arrive 15-20 minutes early to get a spot by the railing.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "N/A", cost: "Free" }] }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "20:00 - 20:15", action: "Spectra - Light &amp; Water Show", quickInfo: "Dazzling Bayfront Show!", category: "activity", categoryIcon: "fas fa-water",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Witness a captivating 15-minute outdoor extravaganza of light, water, and music against the city skyline.", estDuration: "15 mins", openingHours: "Showtimes usually 20:00 &amp; 21:00 daily, with an extra 22:00 show on Fri &amp; Sat (confirm schedule).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "If you miss the 8 PM show or want to see it again, there's typically another at 9 PM.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "N/A", cost: "Free" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Viewing Tip", item: "Central Position", note: "Stand centrally for the best audio-visual synchronization." } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>proTip: { move: "If filming, use a wide angle and lock exposure on the city skyline to prevent it from being overexposed by the bright lights of the show.", avoid: "Standing in the very front row if it's windy, as the water spray can sometimes carry further than expected." },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/1E88E5/FFFFFF?text=Spectra+Show+Over+Water",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge1-10', name: "Symphony of Secrets", description: "During a particularly spectacular moment of the Spectra show, lean in and whisper a sweet nothing or a funny secret to each other.", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ // SWAPPED: NOX MOVED TO DAY 1</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "20:20", action: "Grab to NOX – Dine in the Dark", quickInfo: "To Unique Dinner", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Head to NOX for a unique sensory dining experience.", estDuration: "~10-15 mins (travel)", transport: "Grab",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>address: "269 Beach Road, Singapore 199546",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Arrive by 20:15 for the pre-dinner briefing.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$10-15" }] }, mapLink: "https://www.google.com/maps/place/NOX+-+Dine+in+the+Dark/@1.2980568,103.8600073,17z"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ // SWAPPED: NOX MOVED TO DAY 1</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "20:30 - 22:30", action: "NOX – Dine in the Dark", quickInfo: "Sensory Dining Experience", category: "food", categoryIcon: "fas fa-eye-slash",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Experience a multi-course modern European meal served in complete darkness by visually impaired hosts.", estDuration: "2 hours",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Seatings by reservation (e.g., 18:00 - late).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Focus on your senses of taste, smell, and touch. It's a fun challenge to guess the ingredients. Engage with your hosts; they are incredible.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Dinner Experience", cost: "Pre-booked (approx. S$88++ pp for 3 courses)" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Experience", item: "Full Set Menu", note: "Usually includes appetizer, main, dessert, and amuse-bouche." }, { type: "Tip", item: "Inform about dietary restrictions beforehand.", note: "" } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>proTip: { move: "After the meal, when they reveal the menu, it's great fun to see how accurate (or wildly off!) your guesses were. Take notes mentally during the meal if you want to be a super-sleuth.", avoid: "Wearing strong perfume or cologne, as it can interfere with your (and others') heightened sense of smell in the pitch-black environment." },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge1-13', name: "Dark Knight Detective", description: "Together, try to correctly identify at least FIVE distinct ingredients from your main courses at NOX. Compare notes after the reveal!", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ // Optional: Wizard's Brew after NOX</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "22:45 - 23:30", action: "Wizard’s Brew Cocktails (Optional)", quickInfo: "Magical Nightcap", category: "food", categoryIcon: "fas fa-martini-glass-citrus",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "If you're up for it, enjoy themed cocktails at this nearby bar.", estDuration: "45 mins", transport: "Short walk from NOX (confirm location)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Check their Instagram for any special concoctions. 'Phoenix Tears' is a visually popular drink.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Cocktails per person", cost: "~S$25-35" }] }, mapLink: "https://www.google.com/maps/search/?api=1&amp;query=Wizard%27s+Brew+Cocktails+Singapore"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "23:30", action: "Grab to hotel", quickInfo: "End of a Big Day", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Return to The Clan Hotel.", estDuration: "~10 mins (travel)", transport: "Grab",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "A well-deserved rest after a day full of wonders!",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$8-12" }] }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "23:45", action: "Sleep", quickInfo: "Prep for Sentosa!", category: "info", categoryIcon: "fas fa-bed",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Rest up for Reabal's birthday celebrations on Sentosa tomorrow!", estDuration: "N/A",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Lay out clothes for Universal Studios. Charge all devices.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "N/A", cost: "" }] }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>]</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ // DAY 2 (Reabal's 30th)</p>
+<p class="p1"><span class="Apple-converted-space">                </span>day: 2, dateShort: "Fri 30", dateLong: "Friday, 30 May (Reabal's 30th!)", title: "Sentosa &amp; Absurd Birthday Dinner", // Updated title</p>
+<p class="p1"><span class="Apple-converted-space">                </span>daySummary: "Happy 30th Birthday, Reabal! Today is all about epic fun on Sentosa Island. We're hitting Universal Studios for thrilling rides, diving into the wizarding world, and culminating with a truly 'absurd' and unforgettable birthday dining experience at Absurdities!", // Updated summary</p>
+<p class="p1"><span class="Apple-converted-space">                </span>events: [</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "08:15", action: "Grab to Universal Studios Singapore (USS)", quickInfo: "Birthday Adventure Begins!", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Happy 30th Birthday, Reabal! Kick off the celebrations at Universal Studios Singapore on Sentosa Island.", estDuration: "~20-30 mins (travel)", transport: "Grab",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>address: "8 Sentosa Gateway, Singapore 098269 (Resorts World Sentosa)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Get dropped at the Resorts World Sentosa (RWS) basement carpark/casino entrance for the shortest walk to USS. Sentosa island gantry fee (if applicable) might be included in Grab fare or charged separately.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$18-28" }] }, mapLink: "https://www.google.com/maps/place/Universal+Studios+Singapore/@1.2540422,103.8219544,17z"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "09:00 - 16:30", action: "Universal Studios Singapore + Express Pass", quickInfo: "Movie Magic &amp; Thrills!", category: "activity", categoryIcon: "fas fa-film",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Enjoy a full day of rides, shows, and attractions with your Express Pass to minimize wait times.", estDuration: "7.5 hours", openingHours: "Typically 10:00/11:00 - 18:00/19:00 (confirm specific day, arrive at opening for lower crowds).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "With Express Unlimited, you can repeat favorite rides! Stay hydrated. Check showtimes for WaterWorld and others upon arrival.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "USS Tickets + Express", cost: "Pre-booked" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ type: "Thrill Ride", item: "Battlestar Galactica: HUMAN vs. CYLON™", note: "Choose your side! Cylon is more intense (suspended coaster)." },</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ type: "Thrill Ride", item: "Revenge of the Mummy™", note: "Indoor high-speed roller coaster in the dark." },</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ type: "3D Ride", item: "TRANSFORMERS The Ride: The Ultimate 3D Battle", note: "Immersive and action-packed." },</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ type: "Water Ride", item: "Jurassic Park Rapids Adventure™", note: "You WILL get wet! Consider a poncho or a change of clothes." },</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ type: "Family Ride", item: "Puss In Boots’ Giant Journey", note: "Fun, themed coaster." },</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>{ type: "Snack", item: "Minions Popcorn Bucket for Sabah!", note: "A must-get if she's a fan." }</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>proTip: { move: "Even with Express, if a popular ride like Transformers has a slightly longer Express line, check its single-rider line. If you don't mind riding separately for that one ride, it can sometimes be even faster.", avoid: "Buying popcorn buckets or popular merch late in the afternoon – unique designs often sell out. Grab them earlier if they're a priority." },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/F44336/FFFFFF?text=Universal+Studios+Singapore+Entrance",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge2-1', name: "Reabal's Rollercoaster Reign (30th Edition!)", description: "Reabal: As the birthday king, choose one major thrill ride that Sabah might be a little hesitant about. Brave it together! Sabah: Capture Reabal's triumphant (or terrified!) face post-ride.", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "16:30 - 17:00", action: "Walk to The Forum B1 (Lockers) &amp; Quick Break", quickInfo: "Stow Gear &amp; Recharge", category: "info", categoryIcon: "fas fa-info-circle",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Store any bulky bags or souvenirs from USS before your next magical experience.", estDuration: "30 mins", transport: "Walk within Resorts World Sentosa (~5-7 mins from USS exit)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Lockers are available at The Forum (near S.E.A. Aquarium entrance). Check sizes and rental cost. Grab a quick drink or ice cream.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Locker Rental (optional)", cost: "~S$5-15" }] }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "17:30 - 18:30", action: "Harry Potter: A Forbidden Forest Experience (or Visions of Magic)", quickInfo: "Wizarding World Immersion!", category: "activity", categoryIcon: "fas fa-magic-wand-sparkles",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Step into the magical world of Harry Potter with this interactive walkthrough experience (Note: Name/specifics of HP attraction can change seasonally, confirm exact Sentosa offering).", estDuration: "1 hour",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Check specific event timings for your pre-booked slot.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Great for photo opportunities. Interact with all the magical elements. Usually located within RWS grounds or nearby on Sentosa.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "HP Experience Tickets", cost: "Pre-booked" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Interaction", item: "Wand Dueling Photo Op", note: "If available, strike your best wizard pose." }, { type: "Interaction", item: "Patronus Wall/Projections", note: "Often a highlight for photos." } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>proTip: { move: "Test every interactive point or wand icon if applicable – some have subtle or hidden effects that are easy to miss.", avoid: "Bringing very large bags if you can help it, as there might not be lockers directly inside the walkthrough exhibit itself." },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/FFC107/000000?text=Harry+Potter+Magical+Forest+Experience"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "18:35 - 19:00", action: "Grab to Hotel", quickInfo: "Freshen Up for B-Day Dinner", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Head back to The Clan Hotel to shower and change into smart-casual attire for Reabal's special birthday dinner.", estDuration: "~20-30 mins (travel)", transport: "Grab",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Allow enough time to get ready comfortably.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$18-28" }] }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ // SWAPPED: ABSURDITIES MOVED TO DAY 2 (BIRTHDAY)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "20:20", action: "Grab to Absurdities (Neil Rd Area)", quickInfo: "To Reabal's B-Day Dinner!", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Head to Absurdities for Reabal's unique 30th birthday dining experience.", estDuration: "~10-15 mins (travel)", transport: "Grab",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "The exact address for Absurdities is usually revealed upon booking confirmation. Message your host if you anticipate being less than 5 minutes late.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$10-15" }] }, mapLink: "https://www.google.com/maps/search/?api=1&amp;query=Absurdities+Singapore+Neil+Road"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{ // SWAPPED: ABSURDITIES MOVED TO DAY 2 (BIRTHDAY)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "20:45 - 22:45", action: "Absurdities Multiverse Dinner (Reabal's 30th!)", quickInfo: "Whimsical B-Day Feast!", category: "food", categoryIcon: "fas fa-hat-wizard",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Embark on an unconventional and highly interactive dining adventure that takes you through multiple themed rooms and courses. Happy 30th Reabal!", estDuration: "2 hours",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Go with an open mind and be ready for anything! Dress comfortably – you might need to crawl or navigate small spaces. Heels are not recommended. This is more of an experience than a traditional sit-down dinner.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Dinner Experience", cost: "Pre-booked" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Tip", item: "Embrace the Unexpected", note: "The fun is in the surprise and interactivity. Let the staff know it's a special birthday!" } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge2-7-absurdities', name: "Multiverse Merriment", description: "During one of the 'multiverse' transitions at Absurdities, try to subtly swap a small, harmless item with each other without getting caught by the 'other dimension's' inhabitants. (e.g. a napkin for a breadstick).", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "22:45 - 00:00", action: "Optional: Post-Dinner Drinks or Return to Hotel", quickInfo: "Birthday Nightcap or Rest", category: "food", categoryIcon: "fas fa-martini-glass-empty",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Depending on energy levels, find a nearby bar for a final birthday toast, or head back to the hotel.", estDuration: "Variable",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "There are many cool bars in the Neil Road / Keong Saik area if you're up for it. Otherwise, a good night's rest after a fun birthday!",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Drinks (optional)", cost: "S$20-40 pp" }, { name: "Grab to hotel (if applicable)", cost: "~S$8-12"}] }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "00:00", action: "Back at Hotel / End of Birthday", quickInfo: "Happy 30th, Reabal!", category: "info", categoryIcon: "fas fa-moon",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Return to the hotel after a fantastic birthday celebration.", estDuration: "N/A",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Reflect on an amazing day. Hydrate well!",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "N/A", cost: "" }] }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>]</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ // DAY 3</p>
+<p class="p1"><span class="Apple-converted-space">                </span>day: 3, dateShort: "Sat 31", dateLong: "Saturday, 31 May", title: "Zoo, Tattoo, Rooftops, Kampong Glam",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>daySummary: "A day of contrasts! Start with an early morning wildlife adventure at the Singapore Zoo, followed by a personal touch with Reabal's tattoo session. Then, elevate your evening with chic rooftop cocktails before immersing yourselves in the vibrant culture and hidden gems of Kampong Glam.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>events: [</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "07:15", action: "Grab to Singapore Zoo (Mandai Wildlife Reserve)", quickInfo: "Early Start for Wildlife!", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Head out early to the world-renowned Singapore Zoo, known for its open-concept enclosures.", estDuration: "~30-40 mins (travel)", transport: "Grab (most direct)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>address: "80 Mandai Lake Road, Singapore 729826",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Purchase the S$5 giraffe feeding token at the entrance if interested – slots are limited and sell out quickly, especially on weekends. The zoo is large, so plan for a bit of walking.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$24-35" }] }, mapLink: "https://www.google.com/maps/place/Singapore+Zoo/@1.4043363,103.7909961,17z"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "08:30 - 13:00", action: "Explore Singapore Zoo", quickInfo: "Amazing Animals!", category: "activity", categoryIcon: "fas fa-paw",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Discover diverse wildlife in beautifully landscaped, naturalistic habitats. Don't miss the shows and feeding sessions.", estDuration: "4.5 hours",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Typically 08:30 - 18:00 (last entry 17:00, confirm specific day).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>transport: "Walking within zoo, optional tram rides (check if included or extra cost).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Wear comfortable shoes, a hat, and sunscreen. Stay hydrated. Check the map and daily schedule for showtimes (e.g., 'Splash Safari' with sea lions, 'Rainforest Fights Back') and animal feeding times to plan your route.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [ { name: "Zoo Entrance Tickets", cost: "Pre-booked" }, { name: "Giraffe Feeding (optional)", cost: "S$5 per portion" }, { name: "Tram Ride (if not included)", cost: "~S$5" }, { name: "Snacks/Drinks inside", cost: "~S$10-20 pp" } ]},</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Exhibit", item: "Orangutan Island (Free-Ranging Area)", note: "A highlight, see them swing above you." }, { type: "Exhibit", item: "Fragile Forest Biodome", note: "Walk amongst butterflies, lemurs, and sloths." }, { type: "Show", item: "Splash Safari", note: "Usually around 10:30 &amp; 17:00, entertaining sea lion show." }, { type: "Feeding", item: "Giraffe Feeding", note: "Get up close, book tokens early." } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>proTip: { move: "Rent a stroller (around S$15) even if you don't have kids but anticipate getting tired. It's excellent for carrying bags, water bottles, and giving your shoulders a break.", avoid: "Joining the queues for popular animal feeding sessions (like elephants or rhinos) too late, especially after 11:30 AM on a weekend – they can get very long. Aim for earlier sessions if these are a priority." },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/4CAF50/FFFFFF?text=Singapore+Zoo+Orangutans",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge3-1', name: "Primate Paparazzi", description: "Try to capture the most expressive photo of an orangutan or another primate. Bonus points if you can (quietly and respectfully) mimic its pose for a comparison shot with each other later!", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "13:00", action: "Grab back to CBD / Hotel", quickInfo: "Lunch &amp; Tattoo Prep", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Head back towards the city for a quick lunch before Reabal's tattoo appointment.", estDuration: "~30-40 mins (travel)", transport: "Grab",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "You can grab a quick bite at a food court or cafe near The Clan Hotel to save time.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$24-35" }, {name: "Quick Lunch pp", cost: "~S$15-20"}] }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "15:00 - 16:00", action: "Fineline Tattoo (Reabal's Minimalist Stingray)", quickInfo: "New Ink Time!", category: "activity", categoryIcon: "fas fa-pen-nib",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Reabal gets his minimalist stingray tattoo. Ensure the chosen studio is reputable and you've had a consultation if needed.", estDuration: "1 hour (estimate for small piece, incl. setup)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>transport: "Walk from hotel (~10 min, confirm exact studio location with artist)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>// address: "To be confirmed with tattoo artist", // Placeholder</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Have your reference image clear. Discuss placement, size, and aftercare thoroughly with the artist. Ensure the studio follows strict hygiene protocols. Most studios accept cashless payment, but good to confirm beforehand.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Tattoo Cost", cost: "S$ (Varies greatly based on size/artist - get quote)" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>// mapLink: "...", // Add if studio location is known</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge3-3', name: "Stingray Swagger", description: "Reabal: After the tattoo is done (and appropriately covered!), strike your most impressive 'stingray-inspired' pose for Sabah. Think sleek, graceful, and a little bit mysterious.", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "16:10", action: "Hotel: Rinse &amp; Tattoo Aftercare", quickInfo: "Heal Up!", category: "info", categoryIcon: "fas fa-info-circle",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Return to the hotel for Reabal to gently clean the new tattoo as per the artist's instructions and apply aftercare ointment.", estDuration: "20-30 mins", transport: "N/A",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Use unscented soap. Apply a thin layer of recommended ointment. Wear a loose, clean t-shirt over the dressing to avoid irritation.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "N/A", cost: "" }] }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "17:20", action: "Grab to Mr Stork (Andaz Hotel)", quickInfo: "Rooftop Cocktails", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Head to Andaz Singapore for stunning rooftop views and unique cocktails.", estDuration: "~6-10 mins (travel)", transport: "Grab",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>address: "5 Fraser Street, Level 39, Andaz Singapore, Singapore 189354",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Reservation under Reabal's name. Aim to arrive a bit before 17:30 for the best chance at a good teepee hut if not pre-assigned.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$6-12" }] }, mapLink: "https://www.google.com/maps/place/Mr+Stork/@1.2971452,103.8551976,17z"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "17:30 - 19:00", action: "Cocktails in Teepee at Mr Stork", quickInfo: "Teepee Views!", category: "food", categoryIcon: "fas fa-cocktail",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Enjoy panoramic city views from the unique teepee huts while sipping on creative cocktails.", estDuration: "1.5 hours",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Typically 17:00 - 00:00 (confirm specific day).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "The 'Ruby' (gin-based with beetroot, lemon, rosemary) is a unique try. They also have a good selection of other spirits and non-alcoholic options.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Cocktails per person (2-3 drinks)", cost: "~S$50-75" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Cocktail", item: "Ruby", note: "Signature gin-based drink." }, { type: "View", item: "Sunset/City Lights", note: "Arrive before sunset for the transition." } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>proTip: { move: "When booking or upon arrival, specifically request teepee hut #5 if possible – it's often cited as having one of the best, unobstructed skyline views.", avoid: "Arriving much after 6 PM without a teepee reservation, as a line often forms, and teepees are first-come, first-served for walk-ins if not pre-allocated." },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/7E57C2/FFFFFF?text=Mr+Stork+Teepee+View"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "19:05", action: "Walk into Kampong Glam", quickInfo: "Historic District Stroll", category: "travel", categoryIcon: "fas fa-walking",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Take a leisurely walk from Andaz Hotel into the heart of Kampong Glam, a vibrant and historic Malay enclave.", estDuration: "~10-15 mins", transport: "Walk",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Enjoy the change of scenery as you move from the modern CBD to the culturally rich streets of Kampong Glam. Notice the street art and unique shophouses.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "N/A", cost: "" }] }, mapLink: "https://www.google.com/maps/place/Kampong+Glam/@1.3020097,103.8571974,17z" // General Kampong Glam area</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "19:20 - 20:40", action: "Dinner in Kampong Glam", quickInfo: "Vibrant Flavors", category: "food", categoryIcon: "fas fa-utensils",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Choose from a variety of dining options in this lively area, known for Middle Eastern, Malay, and Indonesian cuisine.", estDuration: "1 hour 20 mins",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Byblos Grill (Lebanese, good for shisha if you're into it) or Positano Risto (popular Halal Italian on Bussorah St) are good options. Many places along Arab Street and Bussorah Street offer outdoor seating. Most places take PayWave/contactless cards.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Dinner per person", cost: "~S$30-60" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Restaurant", item: "Byblos Grill", note: "Lebanese cuisine, shisha available." }, { type: "Restaurant", item: "Positano Risto", note: "Popular Halal Italian." }, { type: "Cuisine", item: "Nasi Padang", note: "Try from a local Malay/Indonesian eatery." } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/FF7043/FFFFFF?text=Kampong+Glam+Dinner+Scene"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "20:45 - 21:50", action: "Wander Haji Lane &amp; Arab Street", quickInfo: "Boutiques &amp; Murals", category: "activity", categoryIcon: "fas fa-store",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Explore the narrow, colorful Haji Lane, famous for its independent boutiques, street art, and quirky cafes. Also, browse Arab Street for textiles and traditional wares.", estDuration: "1 hour 5 mins", transport: "On foot",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Haji Lane is great for unique fashion finds and souvenirs. Look out for vibrant murals for photo ops. Live buskers often start performing after 9 PM, adding to the atmosphere.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Shopping (optional)", cost: "Variable" }] }, mapLink: "https://www.google.com/maps/place/Haji+Ln/@1.3015579,103.8589097,18z",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge3-9', name: "Haji Lane Hidden Gem", description: "Find the quirkiest or most unique item in a Haji Lane thrift store or boutique. No need to buy, just discover and share a laugh!", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "22:00 - 23:20", action: "The Library (Secret Bar - Optional)", quickInfo: "Speakeasy Sips", category: "food", categoryIcon: "fas fa-user-secret",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "If you're in the mood for a unique bar experience, try to find The Library, a speakeasy known for its creative cocktails.", estDuration: "1 hour 20 mins",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>transport: "Walk (~6 min from Haji Lane, check exact location/password)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Usually requires a password (check their Instagram page or ask around discreetly at nearby establishments). Known for inventive, albeit sometimes small, cocktails and a quirky, intimate vibe.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Cocktails per person (1-2 drinks)", cost: "~S$25-50" }] }, mapLink: "https://www.google.com/maps/search/?api=1&amp;query=The+Library+Bar+Singapore" // General area, password needed</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "23:30", action: "Grab to hotel", quickInfo: "Night Over", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Return to The Clan Hotel after an evening of culture and cocktails.", estDuration: "~8-12 mins (travel)", transport: "Grab",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$8-14" }] }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>]</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ // DAY 4</p>
+<p class="p1"><span class="Apple-converted-space">                </span>day: 4, dateShort: "Sun 01", dateLong: "Sunday, 1 June", title: "Water Park, Stingrays, Dinos &amp; Trees",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>daySummary: "Get ready for a splash-tastic day combined with underwater wonders and iconic garden marvels! We'll hit the slides at Adventure Cove, get up close with marine life at S.E.A. Aquarium (including feeding rays!), and then explore the stunning Flower Dome and Cloud Forest (with a Jurassic twist!) at Gardens by the Bay, ending with spectacular light shows.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>events: [</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "08:15", action: "Grab to Adventure Cove Waterpark (Sentosa)", quickInfo: "Water Fun Day!", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Head to Sentosa Island for a day of fun at Adventure Cove Waterpark.", estDuration: "~20-30 mins (travel)", transport: "Grab",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>address: "8 Sentosa Gateway, Singapore 098269 (Resorts World Sentosa)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Wear swimwear under your clothes for convenience. Pack sunscreen, a towel, and a waterproof pouch for your phone/cash. Arrive slightly before opening to maximize your time.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$18-28" }] }, mapLink: "https://www.google.com/maps/place/Adventure+Cove+Waterpark/@1.2570978,103.8178919,17z"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "09:00 - 12:30", action: "Adventure Cove Waterpark: Slides &amp; Snorkel", quickInfo: "Splash &amp; Snorkel!", category: "activity", categoryIcon: "fas fa-water-ladder",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Enjoy thrilling water slides, a lazy river, a wave pool, and snorkeling with tropical fish.", estDuration: "3.5 hours",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Typically 10:00 - 17:00 (confirm specific day, aim to enter at opening).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "With an Express Pass (if purchased), hit the most popular slides like Riptide Rocket first. Bluwater Bay (wave pool) is great for relaxing. Rainbow Reef lets you snorkel with thousands of fish. Rent a locker (S$10 small / S$20 large) for valuables.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [ { name: "Adventure Cove Tickets (+ Express if chosen)", cost: "Pre-booked" }, { name: "Locker Rental", cost: "S$10-20" } ]},</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Thrill Slide", item: "Riptide Rocket", note: "Southeast Asia’s first hydro-magnetic coaster for water parks." }, { type: "Relaxing", item: "Adventure River", note: "Float through themed zones, including an underwater tunnel with marine life." }, { type: "Unique", item: "Rainbow Reef", note: "Snorkel with 20,000 friendly fish over a colorful reef." }, { type: "Thrill Slide", item: "Pipeline Plunge / Tidal Twister", note: "Classic high-speed slides." } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>proTip: { move: "If you have an Express Pass, the wristband pick-up is usually to the left of the main turnstiles – get it before entering to save time.", avoid: "Leaving Rainbow Reef snorkeling until very late morning or midday, as water visibility can sometimes decrease with more people in the water." },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/29B6F6/FFFFFF?text=Adventure+Cove+Water+Slides",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge4-1', name: "Pipeline Poseidon &amp; Aqua Aphrodite", description: "Challenge each other to see who can make the biggest splash on one of the slides (safely, of course!). Alternatively, try to hold your breath the longest while floating in the lazy river (just for fun, don't overdo it!).", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "12:40 - 13:40", action: "Lunch: Malaysian Food Street (RWS)", quickInfo: "Hawker Delights", category: "food", categoryIcon: "fas fa-utensils",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Enjoy a quick and tasty lunch at this themed food court within Resorts World Sentosa, offering a variety of Malaysian hawker dishes.", estDuration: "1 hour",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>transport: "Short walk (~4-5 mins from Adventure Cove)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Typically 11:00 - 21:00/22:00.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Good for a relatively affordable and diverse lunch option on Sentosa. Consider takeaway if you're short on time. Hainanese Claypot Rice is a good, hearty option.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Lunch per person", cost: "~S$15-25" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Food", item: "KL Hokkien Mee", note: "Stir-fried noodles in dark soy sauce." }, { type: "Food", item: "Penang Assam Laksa", note: "Spicy and sour fish-based noodle soup." }, { type: "Food", item: "Hainanese Claypot Rice", note: "Savory rice cooked in a claypot." } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>mapLink: "https://www.google.com/maps/place/Malaysian+Food+Street/@1.2569389,103.81901,18z"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "14:00 - 15:00", action: "S.E.A. Aquarium (Fast Track)", quickInfo: "Underwater World", category: "activity", categoryIcon: "fas fa-fish-fins",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Explore one of the world's largest aquariums, home to a vast array of marine species.", estDuration: "1 hour (focused visit with Fast Track)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Typically 10:00 - 17:00/18:00 (confirm specific day).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>transport: "Short walk within RWS",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "The Open Ocean Habitat is the centerpiece and truly breathtaking. Fast Track helps bypass queues, especially valuable on a weekend.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "S.E.A. Aquarium Tickets (+ Fast Track)", cost: "Pre-booked" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Exhibit", item: "Open Ocean Habitat", note: "Massive viewing panel with sharks, manta rays, etc." }, { type: "Exhibit", item: "Shark Seas", note: "Walk through a tunnel surrounded by sharks." }, { type: "Exhibit", item: "Jellyfish Nation", note: "Mesmerizing displays of various jellyfish." } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>proTip: { move: "For the best view at the Open Ocean Habitat, try to find a spot to sit on the floor right up against the acrylic window. Manta rays and sharks often glide majestically right past.", avoid: "Using flash photography, especially at the jellyfish section – it reflects badly off the glass and can disturb the animals." },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/26A69A/FFFFFF?text=SEA+Aquarium+Open+Ocean+Habitat",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge4-3', name: "Aquatic Admiration", description: "Each pick your absolute favorite marine creature in the S.E.A. Aquarium and explain why it's the coolest. Bonus points for a dramatic impression!", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "15:00 - 15:40", action: "Aquarist Lab: Feed Cownose Rays", quickInfo: "Ray Interaction!", category: "activity", categoryIcon: "fas fa-hand-holding-droplet",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Participate in a special add-on experience to get up close and feed the gentle cownose rays.", estDuration: "40 mins",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>transport: "Inside S.E.A. Aquarium (check exact location for the lab session).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Closed-toe shoes are mandatory for safety. Listen carefully to the aquarist's instructions for a safe and enjoyable interaction. This is a unique chance to learn more about these fascinating creatures.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Aquarist Lab Experience", cost: "Pre-booked add-on" }] }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "16:10", action: "Grab to Gardens by the Bay", quickInfo: "Iconic Gardens Await", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Travel from Sentosa to the spectacular Gardens by the Bay.", estDuration: "~15-25 mins (travel)", transport: "Grab",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>address: "18 Marina Gardens Dr, Singapore 018953 (Main Entrance/Visitor Centre)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Ask to be dropped at the Main Entrance or the specific dome you plan to visit first (e.g., Flower Dome drop-off).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$12-20" }] }, mapLink: "https://www.google.com/maps/place/Gardens+by+the+Bay/@1.2815683,103.8617232,17z"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "16:30 - 17:15", action: "Flower Dome Stroll", quickInfo: "Cool Floral Displays", category: "activity", categoryIcon: "fas fa-spa",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Explore the Flower Dome, the larger of the two cooled conservatories, showcasing exotic plants from Mediterranean and semi-arid regions in a perpetual spring.", estDuration: "45 mins",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Typically 09:00 - 21:00 (last admission 20:30, confirm specific day).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "It's pleasantly cool inside, offering a good respite from the heat. Look out for seasonal floral displays which change throughout the year.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Gardens by the Bay Tickets (incl. Flower Dome)", cost: "Pre-booked" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Section", item: "Baobabs and Bottle Trees", note: "Impressive ancient trees." }, { type: "Section", item: "Succulent Garden", note: "Diverse collection of cacti and succulents." } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/66BB6A/FFFFFF?text=Flower+Dome+Interior+View"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "17:30 - 19:00", action: "Cloud Forest – Jurassic World Experience", quickInfo: "Waterfall &amp; Dinos!", category: "activity", categoryIcon: "fas fa-cloud-rain",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Step into a mysterious world veiled in mist, featuring a stunning indoor waterfall and lush vegetation from tropical highlands. The Jurassic World overlay adds dinosaur elements and encounters.", estDuration: "1.5 hours",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Typically 09:00 - 21:00 (last admission 20:30, confirm specific day).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Take the lift to the top ('Lost World') and walk down via the 'Cloud Walk' and 'Treetop Walk' for different perspectives. It can be cool and misty, so a light layer might be comfortable for some.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Gardens by the Bay Tickets (incl. Cloud Forest)", cost: "Pre-booked" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Must-See", item: "Indoor Waterfall", note: "Iconic and great for photos." }, { type: "Walkway", item: "Cloud Walk &amp; Treetop Walk", note: "Offers stunning views from different levels." }, { type: "Photo Op", item: "Raptor Encounter (Jurassic World)", note: "If available, a fun photo." } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>proTip: { move: "If there are two paths for the raptor photo op inside (if it's part of the Jurassic World experience), the left path often moves a bit faster. Get your photo with Blue!", avoid: "Buying Jurassic World merchandise inside the dome itself if the queue is long. The main gift shops near the exit often have the same items with smaller queues." },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/81C784/000000?text=Cloud+Forest+Waterfall+and+Walkways",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge4-7', name: "Jurassic Roar-Off", description: "Reabal: Next to the raptor in Cloud Forest (if present), unleash your best dinosaur roar! Sabah: Capture this epic moment on video for posterity.", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "19:00 - 19:30", action: "OCBC Skyway – Dusk Photos", quickInfo: "Supertree Walkway Views", category: "activity", categoryIcon: "fas fa-camera",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Walk along the 128m-long aerial walkway suspended between two Supertrees, offering breathtaking views of the Gardens and the Marina Bay skyline, especially at dusk.", estDuration: "30 mins (incl. queue &amp; walk)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Typically 09:00 - 21:00 (last admission 20:00, confirm specific day).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Queues can form, especially around sunset. The views are fantastic as the city lights begin to twinkle. It can be a bit breezy up there.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "OCBC Skyway Tickets", cost: "Pre-booked (or purchase on-site, ~S$10-12)" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>mapLink: "https://www.google.com/maps/place/OCBC+Skyway/@1.2822908,103.8638084,18z"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "19:45 - 20:00", action: "Garden Rhapsody Light Show", quickInfo: "Supertree Lights!", category: "activity", categoryIcon: "fas fa-music",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Witness the iconic Supertrees come alive in a free, spectacular nightly light and sound show.", estDuration: "15 mins",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Showtimes typically 19:45 &amp; 20:45 daily (confirm schedule).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>transport: "At Supertree Grove",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Find a spot on the grass in the center of Supertree Grove for the best immersive experience. Arrive a few minutes early to get a good spot.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "N/A", cost: "Free" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>proTip: { move: "Lay down a sarong or mat on the grass about 10-15 minutes before the show starts to claim a good spot. Lying down offers a great perspective looking up at the Supertrees.", avoid: "Sitting directly under the trees if you want a full view of all the lights, as the canopy can block some parts of the show." },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/D4E157/000000?text=Supertree+Grove+Light+Show+at+Night",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge4-9', name: "Symphony of Sighs", description: "During a particularly beautiful moment of Garden Rhapsody, share a quiet, romantic moment or a contented sigh together. Let the lights and music amplify the magic.", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "20:10", action: "Walk to CÉ LA VI (Marina Bay Sands)", quickInfo: "Rooftop Bar Bound", category: "travel", categoryIcon: "fas fa-walking",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Take a pleasant walk from Gardens by the Bay to CÉ LA VI at the top of Marina Bay Sands.", estDuration: "~10-15 mins",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>transport: "Walk (can walk through Gardens by the Bay towards MBS hotel, or via the connecting bridge).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "CÉ LA VI is located at the SkyPark at Marina Bay Sands (Tower 3). There's a dedicated lift for access.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "N/A", cost: "" }] }, mapLink: "https://www.google.com/maps/place/C%C3%89+LA+VI+Singapore/@1.283018,103.8609267,17z"</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "21:00 - 22:00", action: "Skyline Cocktails at CÉ LA VI", quickInfo: "Drinks with a View!", category: "food", categoryIcon: "fas fa-wine-glass",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Enjoy signature cocktails and unparalleled night views of the Singapore skyline from this iconic rooftop destination.", estDuration: "1 hour",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Club Lounge typically from afternoon till late. Restaurant has specific dining hours. Reservations often recommended, especially for tables.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>address: "Level 57, Marina Bay Sands SkyPark, Hotel Tower 3, 1 Bayfront Avenue, Singapore 018971",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "There's usually a cover charge (e.g., S$23-S$28 pp) for the SkyBar/Club Lounge area, which is often redeemable as drink credit. Smart casual dress code is generally enforced (no shorts/slippers for men in the evening).",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Cover Charge/Minimum Spend per person", cost: "~S$23-30+" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Cocktail", item: "Singapore Sling (CÉ LA VI version)", note: "A classic with a view." }, { type: "Cocktail", item: "Sky High Sling", note: "Often their local twist on the classic." }, { type: "Ambiance", item: "Outdoor Deck Area", note: "For the best views, though can be crowded." } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>proTip: { move: "If you just want a quick drink and the view without a full table commitment, head to the standing areas of the SkyBar. It's often easier to get a spot.", avoid: "Bringing a tripod for photos on the deck – security will likely stop you. Handheld photos/videos only." },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge4-11', name: "Toast to the Top", description: "Take an epic skyline photo together at CÉ LA VI, making a toast to your Singapore adventure and all the memories you're creating.", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "22:05", action: "Grab to hotel", quickInfo: "Pack Up Time", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Return to The Clan Hotel after a day packed with iconic sights.", estDuration: "~10-15 mins (travel)", transport: "Grab",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Time to pack your bags for departure tomorrow! An early night would be beneficial.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$10-15" }] }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>]</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{ // DAY 5</p>
+<p class="p1"><span class="Apple-converted-space">                </span>day: 5, dateShort: "Mon 02", dateLong: "Monday, 2 June", title: "Jewel &amp; Wheels Up",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>daySummary: "One last Singaporean marvel before heading home! We'll check out of the hotel early, explore the breathtaking Jewel Changi Airport with its stunning Rain Vortex, enjoy a final breakfast, and then it's time for your flight back to Sydney.",</p>
+<p class="p1"><span class="Apple-converted-space">                </span>events: [</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "06:45", action: "Check-out &amp; Grab to Changi Airport T1", quickInfo: "Departure Day", category: "travel", categoryIcon: "fas fa-taxi",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Check out from The Clan Hotel and head to Changi Airport Terminal 1 for your flight.", estDuration: "~25-35 mins (travel)", transport: "Grab",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Settle your hotel bill the night before if possible for a faster checkout. Aim to be at the airport at least 2.5-3 hours before your 10:00 AM flight, especially since you'll be exploring Jewel.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$25-35" }] }, mapLink: "https://www.google.com/maps/place/Singapore+Changi+Airport+(SIN)/@1.3644202,103.9915308,17z" // Changi Airport T1</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "07:15 - 09:15", action: "Explore Jewel Changi Airport", quickInfo: "Airport Wonders!", category: "activity", categoryIcon: "fas fa-gem",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Experience the stunning Jewel complex with its iconic HSBC Rain Vortex, Shiseido Forest Valley, and various attractions before your flight.", estDuration: "2 hours",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>openingHours: "Rain Vortex showtimes vary (e.g., hourly from 10/11 AM on weekdays, more frequent on weekends). Shops typically 10:00-22:00. Attractions have their own hours. Early morning is good for fewer crowds at the Vortex.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>transport: "Walk (Jewel is connected to T1, T2, T3)",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Must-sees: HSBC Rain Vortex (world's tallest indoor waterfall – check light &amp; sound showtimes if any align with your early visit). Shiseido Forest Valley. Canopy Park attractions (Canopy Bridge, Discovery Slides etc. - some are ticketed, check if time permits and if they are open this early). Store carry-on luggage in Jewel's early check-in/baggage storage facilities (S$10-S$18 depending on size) to explore freely. Shake Shack for breakfast is a good, quick option and usually opens early.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [ { name: "Luggage Storage (optional)", cost: "S$10-18" }, { name: "Breakfast at Shake Shack (or other)", cost: "~S$15-25 pp" }, { name: "Canopy Park Attractions (optional, if time &amp; open)", cost: "Varies per attraction" } ]},</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>recommendations: [ { type: "Must-See", item: "HSBC Rain Vortex", note: "Even without the show, it's magnificent. Light conditions are beautiful in the morning." }, { type: "Walk", item: "Shiseido Forest Valley", note: "Lush greenery surrounding the vortex, a peaceful stroll." }, { type: "Food", item: "Shake Shack (Jewel)", note: "Usually opens early, good for a quick American-style breakfast." } ],</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>image: "https://placehold.co/600x400/80DEEA/000000?text=Jewel+Rain+Vortex+Morning", mapLink: "https://www.google.com/maps/place/Jewel+Changi+Airport/@1.3600893,103.9877372,17z",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge5-1', name: "Vortex Vows", description: "Standing before the magnificent Rain Vortex, take a moment to whisper one thing you're grateful for from this trip to each other. Let the calming sound of the water be your witness.", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "09:20", action: "Proceed to Scoot Bag-Drop &amp; Security (T1)", quickInfo: "Airport Formalities", category: "travel", categoryIcon: "fas fa-person-through-window",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Head to the Scoot check-in counters in Terminal 1 for bag drop and then proceed through security and immigration.", estDuration: "30-40 mins",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>transport: "Walk from Jewel to T1 check-in rows.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Scoot check-in is usually at Row H in T1, but always confirm on the departure screens. Ensure power banks are in your carry-on and easily accessible for security screening. Liquids according to rules.",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "N/A", cost: "" }] }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>{</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>time: "10:00", action: "Depart: Scoot TR12 to Sydney", quickInfo: "Homeward Bound", category: "travel", categoryIcon: "fas fa-plane-up",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>description: "Board your Scoot flight TR12 back to Sydney. Safe travels!", estDuration: "N/A",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>tips: "Log on to Scoot's Wi-Fi (Surf 80 or other package if purchased) once cruising. Time to relax, look through your photos, and reminisce on an amazing Singapore trip!",</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>budgetDetails: { items: [{ name: "N/A", cost: "" }] },</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>challenge: { id: 'challenge5-3', name: "Final Farewell Squeeze", description: "One last hug (or a high-five, or a secret handshake you developed on the trip) before boarding the plane. Promise to plan another adventure soon!", completed: false }</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>]</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', function() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const keyInfoAccordionContainer = document.getElementById('keyInfoAccordion');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Removed checklistsContentContainer as the main checklist section is gone</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const simplifiedIconLegendContainer = document.getElementById('simplifiedIconLegend');<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const dayTabsContainer = document.querySelector('#dayTabsContainer .flex');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const itineraryContent = document.getElementById('itineraryContent');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const themeToggle = document.getElementById('themeToggle');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const body = document.body;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const themeIcon = themeToggle.querySelector('i');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// --- THEME TOGGLE ---</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const applyTheme = (theme) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (theme === 'light') {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>body.classList.remove('dark-mode'); body.classList.add('light-mode');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>themeIcon.classList.remove('fa-sun'); themeIcon.classList.add('fa-moon');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>localStorage.setItem('singaporeItineraryTheme', 'light');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>body.classList.remove('light-mode'); body.classList.add('dark-mode');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>themeIcon.classList.remove('fa-moon'); themeIcon.classList.add('fa-sun');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>localStorage.setItem('singaporeItineraryTheme', 'dark');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>};</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const savedTheme = localStorage.getItem('singaporeItineraryTheme') || 'dark';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>applyTheme(savedTheme);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>themeToggle.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>body.classList.contains('light-mode') ? applyTheme('dark') : applyTheme('light');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// --- POPULATE KEY INFO ACCORDIONS ---</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const keyInfoSections = [</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "Flight Details", icon: "fas fa-plane-departure", contentFn: () =&gt; {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const fd = itineraryData.flightDetails;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>let html = `&lt;h3 class="font-semibold text-sky-500 dark:text-sky-400 mb-2 text-base"&gt;Booking Ref: ${fd.confirmation} (${fd.airline})&lt;/h3&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>[fd.departing, fd.returning].forEach((flight, idx) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>html += `&lt;div class="mb-3 ${idx === 0 ? 'pb-3 border-b accordion-border' : ''}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="font-medium text-content-primary text-sm"&gt;${idx === 0 ? 'Departing' : 'Returning'}: ${flight.from} &lt;i class="fas fa-arrow-right mx-1 text-xs"&gt;&lt;/i&gt; ${flight.to}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-content-secondary text-xs"&gt;${flight.date} | ${flight.time} (${flight.duration})&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;p class="text-content-secondary text-xs"&gt;Flight: ${flight.flight} (${flight.class})&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;ul class="list-none mt-1.5 space-y-1"&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>flight.passengers.forEach(p =&gt; { html += `&lt;li class="text-xs text-content-secondary"&gt;&lt;i class="fas fa-user mr-1.5 opacity-70"&gt;&lt;/i&gt; ${p.name}: ${p.baggage}&lt;/li&gt;`; });</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>html += `&lt;/ul&gt;&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>return html;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}},</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "Hotel Information", icon: "fas fa-hotel", contentFn: () =&gt; {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const hd = itineraryData.hotelDetails;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>return `</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="font-semibold text-content-primary text-base"&gt;${hd.name}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-content-secondary text-sm"&gt;${hd.address} &lt;a href="${hd.mapLink}" target="_blank" class="text-sky-500 dark:text-sky-400 hover:underline text-xs ml-1"&gt;(View Map &lt;i class="fas fa-external-link-alt text-xs"&gt;&lt;/i&gt;)&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-content-secondary text-sm"&gt;Phone: ${hd.phone}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;hr class="my-2.5 accordion-border"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-content-secondary text-sm"&gt;Guest: ${hd.guestName} (${hd.bookingDuration})&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-content-secondary text-sm"&gt;Check-in: ${hd.checkIn}&lt;/p&gt;&lt;p class="text-content-secondary text-sm"&gt;Check-out: ${hd.checkOut}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-content-secondary text-sm"&gt;Check-in Numbers: ${hd.checkInNumbers.join(' / ')}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;hr class="my-2.5 accordion-border"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-content-secondary text-sm"&gt;Cost: ${hd.cost}&lt;/p&gt;&lt;p class="text-content-secondary text-sm"&gt;Meals: ${hd.meals}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-amber-500 dark:text-amber-400 text-xs mt-1.5"&gt;Cancellation: ${hd.cancellation}&lt;/p&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}},</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{ title: "Essential Info", icon: "fas fa-book-open", contentFn: () =&gt; {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>let grabHTML = '&lt;h3 class="font-semibold text-sky-500 dark:text-sky-400 mb-1.5 text-base"&gt;&lt;i class="fas fa-taxi mr-1.5"&gt;&lt;/i&gt; Grab/Gojek Rules:&lt;/h3&gt;&lt;ul class="list-disc list-inside text-content-secondary text-sm space-y-1 mb-4 pl-1"&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>itineraryData.grabRules.forEach(rule =&gt; grabHTML += `&lt;li&gt;${rule}&lt;/li&gt;`);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>grabHTML += '&lt;/ul&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>let emergencyHTML = '&lt;h3 class="font-semibold text-sky-500 dark:text-sky-400 mb-1.5 text-base"&gt;&lt;i class="fas fa-phone-volume mr-1.5"&gt;&lt;/i&gt; Emergency Contacts:&lt;/h3&gt;&lt;ul class="list-disc list-inside text-content-secondary text-sm space-y-1 pl-1"&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>itineraryData.emergencyContacts.forEach(contact =&gt; emergencyHTML += `&lt;li&gt;${contact.name}: &lt;strong class="font-medium text-content-primary"&gt;${contact.number}&lt;/strong&gt;&lt;/li&gt;`);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>emergencyHTML += '&lt;/ul&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>return grabHTML + emergencyHTML;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if(keyInfoAccordionContainer) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>keyInfoAccordionContainer.innerHTML = '';<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>keyInfoSections.forEach(section =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const details = document.createElement('details');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>details.className = 'accordion-bg rounded-xl shadow-lg overflow-hidden';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>details.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;summary class="accordion-summary-text font-semibold text-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span&gt;&lt;i class="${section.icon} mr-2.5"&gt;&lt;/i&gt;${section.title}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i class="fas fa-chevron-down accordion-icon text-content-secondary"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/summary&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="p-4 md:p-5 border-t accordion-border text-sm"&gt;${section.contentFn()}&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>keyInfoAccordionContainer.appendChild(details);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// --- POPULATE SIMPLIFIED ICON LEGEND ---</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (simplifiedIconLegendContainer) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>simplifiedIconLegendContainer.innerHTML = '';<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const title = document.createElement('h3');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title.className = 'legend-title-text font-semibold text-center text-lg mb-3';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>title.textContent = 'Quick Icons Guide';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>simplifiedIconLegendContainer.appendChild(title);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const gridDiv = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>gridDiv.className = 'grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm text-center';</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>simplifiedIconLegendData.forEach(item =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const itemDiv = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>itemDiv.className = 'flex flex-col items-center p-2.5 bg-slate-700 dark:bg-slate-700 light:bg-slate-100 rounded-lg';<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>itemDiv.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;i class="${item.icon} text-sky-500 dark:text-sky-400 text-2xl mb-1.5"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-xs text-content-secondary"&gt;${item.category}&lt;/span&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>gridDiv.appendChild(itemDiv);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                </span>simplifiedIconLegendContainer.appendChild(gridDiv);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.error("CRITICAL Error: simplifiedIconLegendContainer element not found in DOM. Check ID 'simplifiedIconLegend'.");</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// --- LOCAL STORAGE FOR EVENT CHECKLISTS &amp; CHALLENGES ---</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const eventStatesLocalStorageKey = 'singaporeTripEventStates';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>let savedEventStates = JSON.parse(localStorage.getItem(eventStatesLocalStorageKey)) || {};</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// --- POPULATE DAY TABS AND CONTENT ---</p>
+<p class="p1"><span class="Apple-converted-space">            </span>function renderDays() {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (!dayTabsContainer || !itineraryContent) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>console.error("CRITICAL Error: Day tabs or itinerary content container not found.");</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>dayTabsContainer.innerHTML = '';<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>itineraryContent.innerHTML = '';<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const currentHash = window.location.hash || `#day-${itineraryData.days[0].day}`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>itineraryData.days.forEach((dayData, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const dayHash = `#day-${dayData.day}`;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const tabButton = document.createElement('a');<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>tabButton.href = dayHash;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>tabButton.className = `day-tab-button px-3.5 py-2 rounded-lg text-sm font-medium whitespace-nowrap ${currentHash === dayHash ? 'tab-active' : 'tab-inactive'}`;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>tabButton.textContent = `Day ${dayData.day}`;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>tabButton.setAttribute('data-day', dayData.day);</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>dayTabsContainer.appendChild(tabButton);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const dayElementId = `day-${dayData.day}-content-section`;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const dayContentDiv = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>dayContentDiv.id = dayElementId;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>dayContentDiv.className = currentHash === dayHash ? 'content-active' : 'content-inactive';</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>let dayTitleHTML = `&lt;div class="mb-6 pt-4 text-center"&gt; &lt;h2 class="header-title text-3xl md:text-4xl font-bold mb-2"&gt;${dayData.title}&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                          </span>&lt;p class="header-subtitle text-lg mb-3"&gt;${dayData.dateLong}${dayData.dateLong.includes("Reabal's 30th") ? ' &lt;i class="fas fa-birthday-cake text-pink-500 dark:text-pink-400 ml-1.5"&gt;&lt;/i&gt;' : ''}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                          </span>${dayData.daySummary ? `&lt;p class="text-content-secondary text-sm italic max-w-xl mx-auto"&gt;${dayData.daySummary}&lt;/p&gt;` : ''}</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;`;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>let eventsHTML = '&lt;div class="space-y-4"&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>dayData.events.forEach((event, eventIndex) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>const categoryClass = event.category ? `event-card-border-${event.category}` : '';</p>
+<p class="p2"><span class="Apple-converted-space">                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>let eventChecklistHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>if (event.eventChecklist &amp;&amp; event.eventChecklist.length &gt; 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>eventChecklistHTML += `&lt;h5 class="font-semibold text-content-primary mt-3 mb-1.5 text-base"&gt;Tasks for this Event:&lt;/h5&gt;&lt;div class="space-y-2 mb-2"&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>event.eventChecklist.forEach(task =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>const isCompleted = savedEventStates[task.id] !== undefined ? savedEventStates[task.id] : task.completed;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>eventChecklistHTML += `</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="checklist-item-bg flex items-center p-2.5 rounded-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;input type="checkbox" id="${task.id}" data-id="${task.id}" data-type="eventTask" class="hidden" ${isCompleted ? 'checked' : ''}&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;label for="${task.id}" class="flex items-center cursor-pointer w-full"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;i class="far ${isCompleted ? 'fa-check-square checklist-icon-checked' : 'fa-square checklist-icon-unchecked'} text-lg mr-2.5"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;span class="text-content-primary text-xs ${isCompleted ? 'checklist-text-checked' : ''}"&gt;${task.text}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>eventChecklistHTML += `&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>let challengeHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>if (event.challenge) {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>const isCompleted = savedEventStates[event.challenge.id] !== undefined ? savedEventStates[event.challenge.id] : event.challenge.completed;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>challengeHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="mt-3 p-3 rounded-lg border-l-4 challenge-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="flex items-center mb-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;input type="checkbox" id="${event.challenge.id}" data-id="${event.challenge.id}" data-type="challenge" class="hidden" ${isCompleted ? 'checked' : ''}&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;label for="${event.challenge.id}" class="flex items-center cursor-pointer w-full"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;i class="far ${isCompleted ? 'fa-check-square checklist-icon-checked' : 'fa-square checklist-icon-unchecked'} text-lg mr-2"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;span class="text-xs font-bold challenge-title ${isCompleted ? 'checklist-text-checked' : ''}"&gt;&lt;i class="fas fa-trophy mr-1"&gt;&lt;/i&gt; Challenge: ${event.challenge.name}&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p class="text-xs text-content-secondary pl-7"&gt;${event.challenge.description}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>eventsHTML += `</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;details class="event-card-bg rounded-xl shadow-lg overflow-hidden ${categoryClass}" id="event-${dayData.day}-${eventIndex}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;summary class="p-4 items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="event-summary-content"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="flex-shrink-0 w-16 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;p class="font-bold text-sky-500 dark:text-sky-400 text-lg"&gt;${event.time}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>${event.categoryIcon ? `&lt;i class="${event.categoryIcon} text-2xl text-slate-500 dark:text-slate-500 light:text-slate-400 mt-1.5"&gt;&lt;/i&gt;` : ''}</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="ml-4 flex-grow"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;h4 class="font-semibold text-content-primary text-md leading-tight"&gt;${event.action}&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>${event.quickInfo ? `&lt;p class="text-xs event-quick-info mt-0.5"&gt;${event.quickInfo}&lt;/p&gt;`: ''}</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;i class="fas fa-chevron-down event-accordion-icon text-content-secondary ml-3"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/summary&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="event-details-content-wrapper"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="event-details-content border-t event-border space-y-3 text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>${event.image ? `&lt;img src="${event.image}" alt="${event.action}" class="rounded-lg my-3 max-h-52 w-full object-cover shadow-md" onerror="this.style.display='none'; console.error('Image failed to load: ${event.image}')"&gt;` : ''}</p>
+<p class="p2"><span class="Apple-converted-space">                                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;h5 class="font-semibold text-content-primary mt-1 mb-1.5 text-base"&gt;Details:&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;ul class="detail-list space-y-1.5 mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>${event.description ? `&lt;li class="detail-item"&gt;&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt;&lt;span class="text-content-secondary"&gt;${event.description}&lt;/span&gt;&lt;/li&gt;` : ''}</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>${event.estDuration ? `&lt;li class="detail-item"&gt;&lt;i class="fas fa-clock"&gt;&lt;/i&gt;&lt;span class="text-content-secondary"&gt;Recommended Duration: ${event.estDuration}&lt;/span&gt;&lt;/li&gt;` : ''}</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>${event.openingHours ? `&lt;li class="detail-item"&gt;&lt;i class="fas fa-door-open"&gt;&lt;/i&gt;&lt;span class="text-content-secondary"&gt;Hours: ${event.openingHours}&lt;/span&gt;&lt;/li&gt;` : ''}</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>${event.address &amp;&amp; !event.mapLink &amp;&amp; event.category !== 'travel' &amp;&amp; event.category !== 'info' ? `&lt;li class="detail-item"&gt;&lt;i class="fas fa-map-pin"&gt;&lt;/i&gt;&lt;span class="text-content-secondary"&gt;${event.address}&lt;/span&gt;&lt;/li&gt;` : ''}</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>${event.transport &amp;&amp; event.category !== 'travel' ? `&lt;li class="detail-item"&gt;&lt;i class="fas fa-route"&gt;&lt;/i&gt;&lt;span class="text-content-secondary"&gt;Transport: ${event.transport}&lt;/span&gt;&lt;/li&gt;` : ''}</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>${event.budgetDetails &amp;&amp; event.budgetDetails.items.some(i =&gt; i.cost) ? `</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;h5 class="font-semibold text-content-primary mt-3 mb-1.5 text-base"&gt;Budget Breakdown:&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;ul class="detail-list space-y-1 mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                                </span>${event.budgetDetails.items.map(item =&gt; item.cost ? `&lt;li class="detail-item"&gt;&lt;i class="fas fa-dollar-sign"&gt;&lt;/i&gt;&lt;span class="text-content-secondary"&gt;${item.name}: &lt;span class="budget-tag text-xs font-semibold px-2 py-0.5 rounded-full ml-1"&gt;${item.cost}&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;` : '').join('')}</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;/ul&gt;` : ''</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>${eventChecklistHTML}<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>${event.tips ? `&lt;p class="text-content-secondary mt-2"&gt;&lt;strong class="font-medium text-sky-500 dark:text-sky-400"&gt;Tip:&lt;/strong&gt; ${event.tips}&lt;/p&gt;` : ''}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>${event.recommendations &amp;&amp; event.recommendations.length &gt; 0 ? `</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;div class="mt-3 p-3 rounded-lg border-l-4 recommendation-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                                </span>&lt;p class="text-xs font-bold recommendation-title mb-1.5"&gt;&lt;i class="fas fa-thumbs-up mr-1.5"&gt;&lt;/i&gt; Recommendations:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                                </span>&lt;ul class="list-none space-y-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                                </span>${event.recommendations.map(rec =&gt; `&lt;li class="text-xs text-content-secondary"&gt;&lt;strong class="text-content-primary"&gt;${rec.type} - ${rec.item}:&lt;/strong&gt; ${rec.note}&lt;/li&gt;`).join('')}</p>
+<p class="p1"><span class="Apple-converted-space">                                                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>` : ''}</p>
+<p class="p2"><span class="Apple-converted-space">                                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>${event.proTip ? `</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;div class="mt-3 p-3 rounded-lg border-l-4 pro-tip-card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                                </span>&lt;p class="text-xs font-semibold text-sky-500 dark:text-sky-400 mb-1"&gt;Pro-Tip:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                                </span>&lt;p class="text-xs text-content-secondary"&gt;&lt;strong class="pro-tip-do"&gt;Do:&lt;/strong&gt; ${event.proTip.move}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                                </span>&lt;p class="text-xs text-content-secondary"&gt;&lt;strong class="pro-tip-avoid"&gt;Avoid:&lt;/strong&gt; ${event.proTip.avoid}&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;` : ''}</p>
+<p class="p2"><span class="Apple-converted-space">                                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>${challengeHTML}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>${event.mapLink ? `&lt;a href="${event.mapLink}" target="_blank" class="map-button inline-flex items-center mt-3 text-xs font-semibold px-3.5 py-2 rounded-md transition-colors shadow-sm"&gt;&lt;i class="fas fa-map-marked-alt mr-2"&gt;&lt;/i&gt; View ${event.address &amp;&amp; event.category !=='travel' ? event.action : 'Map'}&lt;/a&gt;` : ''}</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/details&gt;`;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>eventsHTML += '&lt;/div&gt;';</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>dayContentDiv.innerHTML = dayTitleHTML + eventsHTML;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>itineraryContent.appendChild(dayContentDiv);</p>
+<p class="p2"><br></p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (currentHash === dayHash) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>setTimeout(() =&gt; {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                            </span>const targetElement = document.getElementById(dayElementId);</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>if (targetElement) {</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>const headerOffset = 80;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                                </span>const elementPosition = targetElement.getBoundingClientRect().top;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>const offsetPosition = elementPosition + window.pageYOffset - headerOffset;</p>
+<p class="p2"><span class="Apple-converted-space">                                </span></p>
+<p class="p1"><span class="Apple-converted-space">                                </span>window.scrollTo({</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>top: offsetPosition,</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>behavior: 'smooth'</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>}, 50);<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderDays();<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>window.addEventListener('hashchange', renderDays, false);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Event delegation for event checklists and challenges</p>
+<p class="p1"><span class="Apple-converted-space">            </span>itineraryContent.addEventListener('change', (e) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (e.target.type === 'checkbox' &amp;&amp; (e.target.dataset.type === 'eventTask' || e.target.dataset.type === 'challenge')) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const itemId = e.target.dataset.id;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const label = e.target.nextElementSibling;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const iconEl = label.querySelector('i.far');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const textEl = label.querySelector('span');<span class="Apple-converted-space"> </span></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>savedEventStates[itemId] = e.target.checked;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>localStorage.setItem(eventStatesLocalStorageKey, JSON.stringify(savedEventStates));</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (e.target.checked) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>iconEl.classList.remove('fa-square', 'checklist-icon-unchecked');</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>iconEl.classList.add('fa-check-square', 'checklist-icon-checked');</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>if (textEl) textEl.classList.add('checklist-text-checked');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>iconEl.classList.remove('fa-check-square', 'checklist-icon-checked');</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>iconEl.classList.add('fa-square', 'checklist-icon-unchecked');</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>if (textEl) textEl.classList.remove('checklist-text-checked');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (dayTabsContainer) {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>dayTabsContainer.addEventListener('click', function(e) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const targetTab = e.target.closest('.day-tab-button');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (!targetTab || !targetTab.href) return;<span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                     </span>setTimeout(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>targetTab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}, 0);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>console.error("CRITICAL Error: dayTabsContainer element not found.");</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('lastUpdated').textContent = `Last updated: ${new Date().toLocaleString('en-AU', { dateStyle: 'medium', timeStyle: 'short' })}`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
