@@ -602,4 +602,466 @@
                         description: "Head to Sentosa Island for a day of fun at Adventure Cove Waterpark.", estDuration: "~20-30 mins (travel)", transport: "Grab",
                         address: "8 Sentosa Gateway, Singapore 098269 (Resorts World Sentosa)",
                         tips: "Wear swimwear under your clothes for convenience. Pack sunscreen, a towel, and a waterproof pouch for your phone/cash. Arrive slightly before opening to maximize your time.",
-                        budgetDetails: { items:
+                        budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$18-28" }] }, mapLink: "https://www.google.com/maps/place/Adventure+Cove+Waterpark/@1.2570978,103.8178919,17z"
+                    },
+                    {
+                        time: "09:00 - 12:30", action: "Adventure Cove Waterpark: Slides & Snorkel", quickInfo: "Splash & Snorkel!", category: "activity", categoryIcon: "fas fa-water-ladder",
+                        description: "Enjoy thrilling water slides, a lazy river, a wave pool, and snorkeling with tropical fish.", estDuration: "3.5 hours",
+                        openingHours: "Typically 10:00 - 17:00 (confirm specific day, aim to enter at opening).",
+                        tips: "With an Express Pass (if purchased), hit the most popular slides like Riptide Rocket first. Bluwater Bay (wave pool) is great for relaxing. Rainbow Reef lets you snorkel with thousands of fish. Rent a locker (S$10 small / S$20 large) for valuables.",
+                        budgetDetails: { items: [ { name: "Adventure Cove Tickets (+ Express if chosen)", cost: "Pre-booked" }, { name: "Locker Rental", cost: "S$10-20" } ]},
+                        recommendations: [ { type: "Thrill Slide", item: "Riptide Rocket", note: "Southeast Asia’s first hydro-magnetic coaster for water parks." }, { type: "Relaxing", item: "Adventure River", note: "Float through themed zones, including an underwater tunnel with marine life." }, { type: "Unique", item: "Rainbow Reef", note: "Snorkel with 20,000 friendly fish over a colorful reef." }, { type: "Thrill Slide", item: "Pipeline Plunge / Tidal Twister", note: "Classic high-speed slides." } ],
+                        proTip: { move: "If you have an Express Pass, the wristband pick-up is usually to the left of the main turnstiles – get it before entering to save time.", avoid: "Leaving Rainbow Reef snorkeling until very late morning or midday, as water visibility can sometimes decrease with more people in the water." },
+                        image: "https://placehold.co/600x400/29B6F6/FFFFFF?text=Adventure+Cove+Water+Slides",
+                        challenge: { id: 'challenge4-1', name: "Pipeline Poseidon & Aqua Aphrodite", description: "Challenge each other to see who can make the biggest splash on one of the slides (safely, of course!). Alternatively, try to hold your breath the longest while floating in the lazy river (just for fun, don't overdo it!).", completed: false }
+                    },
+                    {
+                        time: "12:40 - 13:40", action: "Lunch: Malaysian Food Street (RWS)", quickInfo: "Hawker Delights", category: "food", categoryIcon: "fas fa-utensils",
+                        description: "Enjoy a quick and tasty lunch at this themed food court within Resorts World Sentosa, offering a variety of Malaysian hawker dishes.", estDuration: "1 hour",
+                        transport: "Short walk (~4-5 mins from Adventure Cove)",
+                        openingHours: "Typically 11:00 - 21:00/22:00.",
+                        tips: "Good for a relatively affordable and diverse lunch option on Sentosa. Consider takeaway if you're short on time. Hainanese Claypot Rice is a good, hearty option.",
+                        budgetDetails: { items: [{ name: "Lunch per person", cost: "~S$15-25" }] },
+                        recommendations: [ { type: "Food", item: "KL Hokkien Mee", note: "Stir-fried noodles in dark soy sauce." }, { type: "Food", item: "Penang Assam Laksa", note: "Spicy and sour fish-based noodle soup." }, { type: "Food", item: "Hainanese Claypot Rice", note: "Savory rice cooked in a claypot." } ],
+                        mapLink: "https://www.google.com/maps/place/Malaysian+Food+Street/@1.2569389,103.81901,18z"
+                    },
+                    {
+                        time: "14:00 - 15:00", action: "S.E.A. Aquarium (Fast Track)", quickInfo: "Underwater World", category: "activity", categoryIcon: "fas fa-fish-fins",
+                        description: "Explore one of the world's largest aquariums, home to a vast array of marine species.", estDuration: "1 hour (focused visit with Fast Track)",
+                        openingHours: "Typically 10:00 - 17:00/18:00 (confirm specific day).",
+                        transport: "Short walk within RWS",
+                        tips: "The Open Ocean Habitat is the centerpiece and truly breathtaking. Fast Track helps bypass queues, especially valuable on a weekend.",
+                        budgetDetails: { items: [{ name: "S.E.A. Aquarium Tickets (+ Fast Track)", cost: "Pre-booked" }] },
+                        recommendations: [ { type: "Exhibit", item: "Open Ocean Habitat", note: "Massive viewing panel with sharks, manta rays, etc." }, { type: "Exhibit", item: "Shark Seas", note: "Walk through a tunnel surrounded by sharks." }, { type: "Exhibit", item: "Jellyfish Nation", note: "Mesmerizing displays of various jellyfish." } ],
+                        proTip: { move: "For the best view at the Open Ocean Habitat, try to find a spot to sit on the floor right up against the acrylic window. Manta rays and sharks often glide majestically right past.", avoid: "Using flash photography, especially at the jellyfish section – it reflects badly off the glass and can disturb the animals." },
+                        image: "https://placehold.co/600x400/26A69A/FFFFFF?text=SEA+Aquarium+Open+Ocean+Habitat",
+                        challenge: { id: 'challenge4-3', name: "Aquatic Admiration", description: "Each pick your absolute favorite marine creature in the S.E.A. Aquarium and explain why it's the coolest. Bonus points for a dramatic impression!", completed: false }
+                    },
+                    {
+                        time: "15:00 - 15:40", action: "Aquarist Lab: Feed Cownose Rays", quickInfo: "Ray Interaction!", category: "activity", categoryIcon: "fas fa-hand-holding-droplet",
+                        description: "Participate in a special add-on experience to get up close and feed the gentle cownose rays.", estDuration: "40 mins",
+                        transport: "Inside S.E.A. Aquarium (check exact location for the lab session).",
+                        tips: "Closed-toe shoes are mandatory for safety. Listen carefully to the aquarist's instructions for a safe and enjoyable interaction. This is a unique chance to learn more about these fascinating creatures.",
+                        budgetDetails: { items: [{ name: "Aquarist Lab Experience", cost: "Pre-booked add-on" }] }
+                    },
+                    {
+                        time: "16:10", action: "Grab to Gardens by the Bay", quickInfo: "Iconic Gardens Await", category: "travel", categoryIcon: "fas fa-taxi",
+                        description: "Travel from Sentosa to the spectacular Gardens by the Bay.", estDuration: "~15-25 mins (travel)", transport: "Grab",
+                        address: "18 Marina Gardens Dr, Singapore 018953 (Main Entrance/Visitor Centre)",
+                        tips: "Ask to be dropped at the Main Entrance or the specific dome you plan to visit first (e.g., Flower Dome drop-off).",
+                        budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$12-20" }] }, mapLink: "https://www.google.com/maps/place/Gardens+by+the+Bay/@1.2815683,103.8617232,17z"
+                    },
+                    {
+                        time: "16:30 - 17:15", action: "Flower Dome Stroll", quickInfo: "Cool Floral Displays", category: "activity", categoryIcon: "fas fa-spa",
+                        description: "Explore the Flower Dome, the larger of the two cooled conservatories, showcasing exotic plants from Mediterranean and semi-arid regions in a perpetual spring.", estDuration: "45 mins",
+                        openingHours: "Typically 09:00 - 21:00 (last admission 20:30, confirm specific day).",
+                        tips: "It's pleasantly cool inside, offering a good respite from the heat. Look out for seasonal floral displays which change throughout the year.",
+                        budgetDetails: { items: [{ name: "Gardens by the Bay Tickets (incl. Flower Dome)", cost: "Pre-booked" }] },
+                        recommendations: [ { type: "Section", item: "Baobabs and Bottle Trees", note: "Impressive ancient trees." }, { type: "Section", item: "Succulent Garden", note: "Diverse collection of cacti and succulents." } ],
+                        image: "https://placehold.co/600x400/66BB6A/FFFFFF?text=Flower+Dome+Interior+View"
+                    },
+                    {
+                        time: "17:30 - 19:00", action: "Cloud Forest – Jurassic World Experience", quickInfo: "Waterfall & Dinos!", category: "activity", categoryIcon: "fas fa-cloud-rain",
+                        description: "Step into a mysterious world veiled in mist, featuring a stunning indoor waterfall and lush vegetation from tropical highlands. The Jurassic World overlay adds dinosaur elements and encounters.", estDuration: "1.5 hours",
+                        openingHours: "Typically 09:00 - 21:00 (last admission 20:30, confirm specific day).",
+                        tips: "Take the lift to the top ('Lost World') and walk down via the 'Cloud Walk' and 'Treetop Walk' for different perspectives. It can be cool and misty, so a light layer might be comfortable for some.",
+                        budgetDetails: { items: [{ name: "Gardens by the Bay Tickets (incl. Cloud Forest)", cost: "Pre-booked" }] },
+                        recommendations: [ { type: "Must-See", item: "Indoor Waterfall", note: "Iconic and great for photos." }, { type: "Walkway", item: "Cloud Walk & Treetop Walk", note: "Offers stunning views from different levels." }, { type: "Photo Op", item: "Raptor Encounter (Jurassic World)", note: "If available, a fun photo." } ],
+                        proTip: { move: "If there are two paths for the raptor photo op inside (if it's part of the Jurassic World experience), the left path often moves a bit faster. Get your photo with Blue!", avoid: "Buying Jurassic World merchandise inside the dome itself if the queue is long. The main gift shops near the exit often have the same items with smaller queues." },
+                        image: "https://placehold.co/600x400/81C784/000000?text=Cloud+Forest+Waterfall+and+Walkways",
+                        challenge: { id: 'challenge4-7', name: "Jurassic Roar-Off", description: "Reabal: Next to the raptor in Cloud Forest (if present), unleash your best dinosaur roar! Sabah: Capture this epic moment on video for posterity.", completed: false }
+                    },
+                    {
+                        time: "19:00 - 19:30", action: "OCBC Skyway – Dusk Photos", quickInfo: "Supertree Walkway Views", category: "activity", categoryIcon: "fas fa-camera",
+                        description: "Walk along the 128m-long aerial walkway suspended between two Supertrees, offering breathtaking views of the Gardens and the Marina Bay skyline, especially at dusk.", estDuration: "30 mins (incl. queue & walk)",
+                        openingHours: "Typically 09:00 - 21:00 (last admission 20:00, confirm specific day).",
+                        tips: "Queues can form, especially around sunset. The views are fantastic as the city lights begin to twinkle. It can be a bit breezy up there.",
+                        budgetDetails: { items: [{ name: "OCBC Skyway Tickets", cost: "Pre-booked (or purchase on-site, ~S$10-12)" }] },
+                        mapLink: "https://www.google.com/maps/place/OCBC+Skyway/@1.2822908,103.8638084,18z"
+                    },
+                    {
+                        time: "19:45 - 20:00", action: "Garden Rhapsody Light Show", quickInfo: "Supertree Lights!", category: "activity", categoryIcon: "fas fa-music",
+                        description: "Witness the iconic Supertrees come alive in a free, spectacular nightly light and sound show.", estDuration: "15 mins",
+                        openingHours: "Showtimes typically 19:45 & 20:45 daily (confirm schedule).",
+                        transport: "At Supertree Grove",
+                        tips: "Find a spot on the grass in the center of Supertree Grove for the best immersive experience. Arrive a few minutes early to get a good spot.",
+                        budgetDetails: { items: [{ name: "N/A", cost: "Free" }] },
+                        proTip: { move: "Lay down a sarong or mat on the grass about 10-15 minutes before the show starts to claim a good spot. Lying down offers a great perspective looking up at the Supertrees.", avoid: "Sitting directly under the trees if you want a full view of all the lights, as the canopy can block some parts of the show." },
+                        image: "https://placehold.co/600x400/D4E157/000000?text=Supertree+Grove+Light+Show+at+Night",
+                        challenge: { id: 'challenge4-9', name: "Symphony of Sighs", description: "During a particularly beautiful moment of Garden Rhapsody, share a quiet, romantic moment or a contented sigh together. Let the lights and music amplify the magic.", completed: false }
+                    },
+                    {
+                        time: "20:10", action: "Walk to CÉ LA VI (Marina Bay Sands)", quickInfo: "Rooftop Bar Bound", category: "travel", categoryIcon: "fas fa-walking",
+                        description: "Take a pleasant walk from Gardens by the Bay to CÉ LA VI at the top of Marina Bay Sands.", estDuration: "~10-15 mins",
+                        transport: "Walk (can walk through Gardens by the Bay towards MBS hotel, or via the connecting bridge).",
+                        tips: "CÉ LA VI is located at the SkyPark at Marina Bay Sands (Tower 3). There's a dedicated lift for access.",
+                        budgetDetails: { items: [{ name: "N/A", cost: "" }] }, mapLink: "https://www.google.com/maps/place/C%C3%89+LA+VI+Singapore/@1.283018,103.8609267,17z"
+                    },
+                    {
+                        time: "21:00 - 22:00", action: "Skyline Cocktails at CÉ LA VI", quickInfo: "Drinks with a View!", category: "food", categoryIcon: "fas fa-wine-glass",
+                        description: "Enjoy signature cocktails and unparalleled night views of the Singapore skyline from this iconic rooftop destination.", estDuration: "1 hour",
+                        openingHours: "Club Lounge typically from afternoon till late. Restaurant has specific dining hours. Reservations often recommended, especially for tables.",
+                        address: "Level 57, Marina Bay Sands SkyPark, Hotel Tower 3, 1 Bayfront Avenue, Singapore 018971",
+                        tips: "There's usually a cover charge (e.g., S$23-S$28 pp) for the SkyBar/Club Lounge area, which is often redeemable as drink credit. Smart casual dress code is generally enforced (no shorts/slippers for men in the evening).",
+                        budgetDetails: { items: [{ name: "Cover Charge/Minimum Spend per person", cost: "~S$23-30+" }] },
+                        recommendations: [ { type: "Cocktail", item: "Singapore Sling (CÉ LA VI version)", note: "A classic with a view." }, { type: "Cocktail", item: "Sky High Sling", note: "Often their local twist on the classic." }, { type: "Ambiance", item: "Outdoor Deck Area", note: "For the best views, though can be crowded." } ],
+                        proTip: { move: "If you just want a quick drink and the view without a full table commitment, head to the standing areas of the SkyBar. It's often easier to get a spot.", avoid: "Bringing a tripod for photos on the deck – security will likely stop you. Handheld photos/videos only." },
+                        challenge: { id: 'challenge4-11', name: "Toast to the Top", description: "Take an epic skyline photo together at CÉ LA VI, making a toast to your Singapore adventure and all the memories you're creating.", completed: false }
+                    },
+                    {
+                        time: "22:05", action: "Grab to hotel", quickInfo: "Pack Up Time", category: "travel", categoryIcon: "fas fa-taxi",
+                        description: "Return to The Clan Hotel after a day packed with iconic sights.", estDuration: "~10-15 mins (travel)", transport: "Grab",
+                        tips: "Time to pack your bags for departure tomorrow! An early night would be beneficial.",
+                        budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$10-15" }] }
+                    }
+                ]
+            },
+            { // DAY 5
+                day: 5, dateShort: "Mon 02", dateLong: "Monday, 2 June", title: "Jewel & Wheels Up",
+                daySummary: "One last Singaporean marvel before heading home! We'll check out of the hotel early, explore the breathtaking Jewel Changi Airport with its stunning Rain Vortex, enjoy a final breakfast, and then it's time for your flight back to Sydney.",
+                events: [
+                    {
+                        time: "06:45", action: "Check-out & Grab to Changi Airport T1", quickInfo: "Departure Day", category: "travel", categoryIcon: "fas fa-taxi",
+                        description: "Check out from The Clan Hotel and head to Changi Airport Terminal 1 for your flight.", estDuration: "~25-35 mins (travel)", transport: "Grab",
+                        tips: "Settle your hotel bill the night before if possible for a faster checkout. Aim to be at the airport at least 2.5-3 hours before your 10:00 AM flight, especially since you'll be exploring Jewel.",
+                        budgetDetails: { items: [{ name: "Grab Fare", cost: "~S$25-35" }] }, mapLink: "https://www.google.com/maps/place/Singapore+Changi+Airport+(SIN)/@1.3644202,103.9915308,17z" // Changi Airport T1
+                    },
+                    {
+                        time: "07:15 - 09:15", action: "Explore Jewel Changi Airport", quickInfo: "Airport Wonders!", category: "activity", categoryIcon: "fas fa-gem",
+                        description: "Experience the stunning Jewel complex with its iconic HSBC Rain Vortex, Shiseido Forest Valley, and various attractions before your flight.", estDuration: "2 hours",
+                        openingHours: "Rain Vortex showtimes vary (e.g., hourly from 10/11 AM on weekdays, more frequent on weekends). Shops typically 10:00-22:00. Attractions have their own hours. Early morning is good for fewer crowds at the Vortex.",
+                        transport: "Walk (Jewel is connected to T1, T2, T3)",
+                        tips: "Must-sees: HSBC Rain Vortex (world's tallest indoor waterfall – check light & sound showtimes if any align with your early visit). Shiseido Forest Valley. Canopy Park attractions (Canopy Bridge, Discovery Slides etc. - some are ticketed, check if time permits and if they are open this early). Store carry-on luggage in Jewel's early check-in/baggage storage facilities (S$10-S$18 depending on size) to explore freely. Shake Shack for breakfast is a good, quick option and usually opens early.",
+                        budgetDetails: { items: [ { name: "Luggage Storage (optional)", cost: "S$10-18" }, { name: "Breakfast at Shake Shack (or other)", cost: "~S$15-25 pp" }, { name: "Canopy Park Attractions (optional, if time & open)", cost: "Varies per attraction" } ]},
+                        recommendations: [ { type: "Must-See", item: "HSBC Rain Vortex", note: "Even without the show, it's magnificent. Light conditions are beautiful in the morning." }, { type: "Walk", item: "Shiseido Forest Valley", note: "Lush greenery surrounding the vortex, a peaceful stroll." }, { type: "Food", item: "Shake Shack (Jewel)", note: "Usually opens early, good for a quick American-style breakfast." } ],
+                        image: "https://placehold.co/600x400/80DEEA/000000?text=Jewel+Rain+Vortex+Morning", mapLink: "https://www.google.com/maps/place/Jewel+Changi+Airport/@1.3600893,103.9877372,17z",
+                        challenge: { id: 'challenge5-1', name: "Vortex Vows", description: "Standing before the magnificent Rain Vortex, take a moment to whisper one thing you're grateful for from this trip to each other. Let the calming sound of the water be your witness.", completed: false }
+                    },
+                    {
+                        time: "09:20", action: "Proceed to Scoot Bag-Drop & Security (T1)", quickInfo: "Airport Formalities", category: "travel", categoryIcon: "fas fa-person-through-window",
+                        description: "Head to the Scoot check-in counters in Terminal 1 for bag drop and then proceed through security and immigration.", estDuration: "30-40 mins",
+                        transport: "Walk from Jewel to T1 check-in rows.",
+                        tips: "Scoot check-in is usually at Row H in T1, but always confirm on the departure screens. Ensure power banks are in your carry-on and easily accessible for security screening. Liquids according to rules.",
+                        budgetDetails: { items: [{ name: "N/A", cost: "" }] }
+                    },
+                    {
+                        time: "10:00", action: "Depart: Scoot TR12 to Sydney", quickInfo: "Homeward Bound", category: "travel", categoryIcon: "fas fa-plane-up",
+                        description: "Board your Scoot flight TR12 back to Sydney. Safe travels!", estDuration: "N/A",
+                        tips: "Log on to Scoot's Wi-Fi (Surf 80 or other package if purchased) once cruising. Time to relax, look through your photos, and reminisce on an amazing Singapore trip!",
+                        budgetDetails: { items: [{ name: "N/A", cost: "" }] },
+                        challenge: { id: 'challenge5-3', name: "Final Farewell Squeeze", description: "One last hug (or a high-five, or a secret handshake you developed on the trip) before boarding the plane. Promise to plan another adventure soon!", completed: false }
+                    }
+                ]
+            }
+        ];
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const keyInfoAccordionContainer = document.getElementById('keyInfoAccordion');
+            // Removed checklistsContentContainer as the main checklist section is gone
+            const simplifiedIconLegendContainer = document.getElementById('simplifiedIconLegend'); 
+            const dayTabsContainer = document.querySelector('#dayTabsContainer .flex');
+            const itineraryContent = document.getElementById('itineraryContent');
+            const themeToggle = document.getElementById('themeToggle');
+            const body = document.body;
+            const themeIcon = themeToggle.querySelector('i');
+            // Gemini Modal and related variables removed
+
+            // --- THEME TOGGLE ---
+            const applyTheme = (theme) => {
+                if (theme === 'light') {
+                    body.classList.remove('dark-mode'); body.classList.add('light-mode');
+                    themeIcon.classList.remove('fa-sun'); themeIcon.classList.add('fa-moon');
+                    localStorage.setItem('singaporeItineraryTheme', 'light');
+                } else { 
+                    body.classList.remove('light-mode'); body.classList.add('dark-mode');
+                    themeIcon.classList.remove('fa-moon'); themeIcon.classList.add('fa-sun');
+                    localStorage.setItem('singaporeItineraryTheme', 'dark');
+                }
+            };
+            const savedTheme = localStorage.getItem('singaporeItineraryTheme') || 'dark';
+            applyTheme(savedTheme);
+            themeToggle.addEventListener('click', () => {
+                body.classList.contains('light-mode') ? applyTheme('dark') : applyTheme('light');
+            });
+
+            // --- POPULATE KEY INFO ACCORDIONS ---
+            const keyInfoSections = [
+                { title: "Flight Details", icon: "fas fa-plane-departure", contentFn: () => { 
+                    const fd = itineraryData.flightDetails;
+                    let html = `<h3 class="font-semibold text-sky-500 dark:text-sky-400 mb-2 text-base">Booking Ref: ${fd.confirmation} (${fd.airline})</h3>`;
+                    [fd.departing, fd.returning].forEach((flight, idx) => {
+                        html += `<div class="mb-3 ${idx === 0 ? 'pb-3 border-b accordion-border' : ''}">
+                            <p class="font-medium text-content-primary text-sm">${idx === 0 ? 'Departing' : 'Returning'}: ${flight.from} <i class="fas fa-arrow-right mx-1 text-xs"></i> ${flight.to}</p>
+                            <p class="text-content-secondary text-xs">${flight.date} | ${flight.time} (${flight.duration})</p>
+                            <p class="text-content-secondary text-xs">Flight: ${flight.flight} (${flight.class})</p>
+                            <ul class="list-none mt-1.5 space-y-1">`;
+                        flight.passengers.forEach(p => { html += `<li class="text-xs text-content-secondary"><i class="fas fa-user mr-1.5 opacity-70"></i> ${p.name}: ${p.baggage}</li>`; });
+                        html += `</ul></div>`;
+                    });
+                    return html;
+                }},
+                { title: "Hotel Information", icon: "fas fa-hotel", contentFn: () => { 
+                    const hd = itineraryData.hotelDetails;
+                    return `
+                        <p class="font-semibold text-content-primary text-base">${hd.name}</p>
+                        <p class="text-content-secondary text-sm">${hd.address} <a href="${hd.mapLink}" target="_blank" class="text-sky-500 dark:text-sky-400 hover:underline text-xs ml-1">(View Map <i class="fas fa-external-link-alt text-xs"></i>)</a></p>
+                        <p class="text-content-secondary text-sm">Phone: ${hd.phone}</p>
+                        <hr class="my-2.5 accordion-border">
+                        <p class="text-content-secondary text-sm">Guest: ${hd.guestName} (${hd.bookingDuration})</p>
+                        <p class="text-content-secondary text-sm">Check-in: ${hd.checkIn}</p><p class="text-content-secondary text-sm">Check-out: ${hd.checkOut}</p>
+                        <p class="text-content-secondary text-sm">Check-in Numbers: ${hd.checkInNumbers.join(' / ')}</p>
+                        <hr class="my-2.5 accordion-border">
+                        <p class="text-content-secondary text-sm">Cost: ${hd.cost}</p><p class="text-content-secondary text-sm">Meals: ${hd.meals}</p>
+                        <p class="text-amber-500 dark:text-amber-400 text-xs mt-1.5">Cancellation: ${hd.cancellation}</p>`;
+                }},
+                { title: "Essential Info", icon: "fas fa-book-open", contentFn: () => { 
+                    let grabHTML = '<h3 class="font-semibold text-sky-500 dark:text-sky-400 mb-1.5 text-base"><i class="fas fa-taxi mr-1.5"></i> Grab/Gojek Rules:</h3><ul class="list-disc list-inside text-content-secondary text-sm space-y-1 mb-4 pl-1">';
+                    itineraryData.grabRules.forEach(rule => grabHTML += `<li>${rule}</li>`);
+                    grabHTML += '</ul>';
+                    let emergencyHTML = '<h3 class="font-semibold text-sky-500 dark:text-sky-400 mb-1.5 text-base"><i class="fas fa-phone-volume mr-1.5"></i> Emergency Contacts:</h3><ul class="list-disc list-inside text-content-secondary text-sm space-y-1 pl-1">';
+                    itineraryData.emergencyContacts.forEach(contact => emergencyHTML += `<li>${contact.name}: <strong class="font-medium text-content-primary">${contact.number}</strong></li>`);
+                    emergencyHTML += '</ul>';
+                    return grabHTML + emergencyHTML;
+                }}
+            ];
+            if(keyInfoAccordionContainer) {
+                keyInfoAccordionContainer.innerHTML = ''; 
+                keyInfoSections.forEach(section => {
+                    const details = document.createElement('details');
+                    details.className = 'accordion-bg rounded-xl shadow-lg overflow-hidden';
+                    details.innerHTML = `
+                        <summary class="accordion-summary-text font-semibold text-lg">
+                            <span><i class="${section.icon} mr-2.5"></i>${section.title}</span>
+                            <i class="fas fa-chevron-down accordion-icon text-content-secondary"></i>
+                        </summary>
+                        <div class="p-4 md:p-5 border-t accordion-border text-sm">${section.contentFn()}</div>`;
+                    keyInfoAccordionContainer.appendChild(details);
+                });
+            }
+            
+            // --- POPULATE SIMPLIFIED ICON LEGEND ---
+            if (simplifiedIconLegendContainer) {
+                simplifiedIconLegendContainer.innerHTML = ''; 
+                const title = document.createElement('h3');
+                title.className = 'legend-title-text font-semibold text-center text-lg mb-3';
+                title.textContent = 'Quick Icons Guide';
+                simplifiedIconLegendContainer.appendChild(title);
+
+                const gridDiv = document.createElement('div');
+                gridDiv.className = 'grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm text-center';
+                
+                simplifiedIconLegendData.forEach(item => {
+                    const itemDiv = document.createElement('div');
+                    itemDiv.className = 'flex flex-col items-center p-2.5 bg-slate-700 dark:bg-slate-700 light:bg-slate-100 rounded-lg'; 
+                    itemDiv.innerHTML = `
+                        <i class="${item.icon} text-sky-500 dark:text-sky-400 text-2xl mb-1.5"></i>
+                        <span class="text-xs text-content-secondary">${item.category}</span>`;
+                    gridDiv.appendChild(itemDiv);
+                });
+                simplifiedIconLegendContainer.appendChild(gridDiv);
+            } else {
+                console.error("CRITICAL Error: simplifiedIconLegendContainer element not found in DOM. Check ID 'simplifiedIconLegend'.");
+            }
+
+            // --- LOCAL STORAGE FOR EVENT CHECKLISTS & CHALLENGES ---
+            const eventStatesLocalStorageKey = 'singaporeTripEventStates';
+            let savedEventStates = JSON.parse(localStorage.getItem(eventStatesLocalStorageKey)) || {};
+
+
+            // --- POPULATE DAY TABS AND CONTENT ---
+            function renderDays() {
+                if (!dayTabsContainer || !itineraryContent) {
+                    console.error("CRITICAL Error: Day tabs or itinerary content container not found.");
+                    return;
+                }
+                dayTabsContainer.innerHTML = ''; 
+                itineraryContent.innerHTML = ''; 
+                const currentHash = window.location.hash || `#day-${itineraryData.days[0].day}`;
+
+                itineraryData.days.forEach((dayData, index) => {
+                    const dayHash = `#day-${dayData.day}`;
+                    const tabButton = document.createElement('a'); 
+                    tabButton.href = dayHash;
+                    tabButton.className = `day-tab-button px-3.5 py-2 rounded-lg text-sm font-medium whitespace-nowrap ${currentHash === dayHash ? 'tab-active' : 'tab-inactive'}`;
+                    tabButton.textContent = `Day ${dayData.day}`;
+                    tabButton.setAttribute('data-day', dayData.day);
+                    dayTabsContainer.appendChild(tabButton);
+
+                    const dayElementId = `day-${dayData.day}-content-section`; 
+                    const dayContentDiv = document.createElement('div');
+                    dayContentDiv.id = dayElementId; 
+                    dayContentDiv.className = currentHash === dayHash ? 'content-active' : 'content-inactive';
+                    
+                    let dayTitleHTML = `<div class="mb-6 pt-4 text-center"> <h2 class="header-title text-3xl md:text-4xl font-bold mb-2">${dayData.title}</h2>
+                                          <p class="header-subtitle text-lg mb-3">${dayData.dateLong}${dayData.dateLong.includes("Reabal's 30th") ? ' <i class="fas fa-birthday-cake text-pink-500 dark:text-pink-400 ml-1.5"></i>' : ''}</p>
+                                          ${dayData.daySummary ? `<p class="text-content-secondary text-sm italic max-w-xl mx-auto">${dayData.daySummary}</p>` : ''}
+                                        </div>`;
+                    
+                    let eventsHTML = '<div class="space-y-4">';
+                    dayData.events.forEach((event, eventIndex) => {
+                        const categoryClass = event.category ? `event-card-border-${event.category}` : '';
+                        
+                        let eventChecklistHTML = '';
+                        if (event.eventChecklist && event.eventChecklist.length > 0) {
+                            eventChecklistHTML += `<h5 class="font-semibold text-content-primary mt-3 mb-1.5 text-base">Tasks for this Event:</h5><div class="space-y-2 mb-2">`;
+                            event.eventChecklist.forEach(task => {
+                                const isCompleted = savedEventStates[task.id] !== undefined ? savedEventStates[task.id] : task.completed;
+                                eventChecklistHTML += `
+                                    <div class="checklist-item-bg flex items-center p-2.5 rounded-md">
+                                        <input type="checkbox" id="${task.id}" data-id="${task.id}" data-type="eventTask" class="hidden" ${isCompleted ? 'checked' : ''}>
+                                        <label for="${task.id}" class="flex items-center cursor-pointer w-full">
+                                            <i class="far ${isCompleted ? 'fa-check-square checklist-icon-checked' : 'fa-square checklist-icon-unchecked'} text-lg mr-2.5"></i>
+                                            <span class="text-content-primary text-xs ${isCompleted ? 'checklist-text-checked' : ''}">${task.text}</span>
+                                        </label>
+                                    </div>`;
+                            });
+                            eventChecklistHTML += `</div>`;
+                        }
+
+                        let challengeHTML = '';
+                        if (event.challenge) {
+                            const isCompleted = savedEventStates[event.challenge.id] !== undefined ? savedEventStates[event.challenge.id] : event.challenge.completed;
+                            challengeHTML = `
+                                <div class="mt-3 p-3 rounded-lg border-l-4 challenge-card">
+                                    <div class="flex items-center mb-1">
+                                        <input type="checkbox" id="${event.challenge.id}" data-id="${event.challenge.id}" data-type="challenge" class="hidden" ${isCompleted ? 'checked' : ''}>
+                                        <label for="${event.challenge.id}" class="flex items-center cursor-pointer w-full">
+                                            <i class="far ${isCompleted ? 'fa-check-square checklist-icon-checked' : 'fa-square checklist-icon-unchecked'} text-lg mr-2"></i>
+                                            <span class="text-xs font-bold challenge-title ${isCompleted ? 'checklist-text-checked' : ''}"><i class="fas fa-trophy mr-1"></i> Challenge: ${event.challenge.name}</span>
+                                        </label>
+                                    </div>
+                                    <p class="text-xs text-content-secondary pl-7">${event.challenge.description}</p>
+                                </div>`;
+                        }
+
+
+                        eventsHTML += `
+                            <details class="event-card-bg rounded-xl shadow-lg overflow-hidden ${categoryClass}" id="event-${dayData.day}-${eventIndex}">
+                                <summary class="p-4 items-center">
+                                    <div class="event-summary-content">
+                                        <div class="flex-shrink-0 w-16 text-center">
+                                            <p class="font-bold text-sky-500 dark:text-sky-400 text-lg">${event.time}</p>
+                                            ${event.categoryIcon ? `<i class="${event.categoryIcon} text-2xl text-slate-500 dark:text-slate-500 light:text-slate-400 mt-1.5"></i>` : ''}
+                                        </div>
+                                        <div class="ml-4 flex-grow">
+                                            <h4 class="font-semibold text-content-primary text-md leading-tight">${event.action}</h4>
+                                            ${event.quickInfo ? `<p class="text-xs event-quick-info mt-0.5">${event.quickInfo}</p>`: ''}
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-chevron-down event-accordion-icon text-content-secondary ml-3"></i>
+                                </summary>
+                                <div class="event-details-content-wrapper">
+                                    <div class="event-details-content border-t event-border space-y-3 text-sm">
+                                        ${event.image ? `<img src="${event.image}" alt="${event.action}" class="rounded-lg my-3 max-h-52 w-full object-cover shadow-md" onerror="this.style.display='none'; console.error('Image failed to load: ${event.image}')">` : ''}
+                                        
+                                        <h5 class="font-semibold text-content-primary mt-1 mb-1.5 text-base">Details:</h5>
+                                        <ul class="detail-list space-y-1.5 mb-2">
+                                            ${event.description ? `<li class="detail-item"><i class="fas fa-info-circle"></i><span class="text-content-secondary">${event.description}</span></li>` : ''}
+                                            ${event.estDuration ? `<li class="detail-item"><i class="fas fa-clock"></i><span class="text-content-secondary">Recommended Duration: ${event.estDuration}</span></li>` : ''}
+                                            ${event.openingHours ? `<li class="detail-item"><i class="fas fa-door-open"></i><span class="text-content-secondary">Hours: ${event.openingHours}</span></li>` : ''}
+                                            ${event.address && !event.mapLink && event.category !== 'travel' && event.category !== 'info' ? `<li class="detail-item"><i class="fas fa-map-pin"></i><span class="text-content-secondary">${event.address}</span></li>` : ''}
+                                            ${event.transport && event.category !== 'travel' ? `<li class="detail-item"><i class="fas fa-route"></i><span class="text-content-secondary">Transport: ${event.transport}</span></li>` : ''}
+                                        </ul>
+
+                                        ${event.budgetDetails && event.budgetDetails.items.some(i => i.cost) ? `
+                                            <h5 class="font-semibold text-content-primary mt-3 mb-1.5 text-base">Budget Breakdown:</h5>
+                                            <ul class="detail-list space-y-1 mb-2">
+                                                ${event.budgetDetails.items.map(item => item.cost ? `<li class="detail-item"><i class="fas fa-dollar-sign"></i><span class="text-content-secondary">${item.name}: <span class="budget-tag text-xs font-semibold px-2 py-0.5 rounded-full ml-1">${item.cost}</span></span></li>` : '').join('')}
+                                            </ul>` : ''
+                                        }
+                                        ${eventChecklistHTML} 
+                                        ${event.tips ? `<p class="text-content-secondary mt-2"><strong class="font-medium text-sky-500 dark:text-sky-400">Tip:</strong> ${event.tips}</p>` : ''}
+
+                                        ${event.recommendations && event.recommendations.length > 0 ? `
+                                            <div class="mt-3 p-3 rounded-lg border-l-4 recommendation-card">
+                                                <p class="text-xs font-bold recommendation-title mb-1.5"><i class="fas fa-thumbs-up mr-1.5"></i> Recommendations:</p>
+                                                <ul class="list-none space-y-1">
+                                                ${event.recommendations.map(rec => `<li class="text-xs text-content-secondary"><strong class="text-content-primary">${rec.type} - ${rec.item}:</strong> ${rec.note}</li>`).join('')}
+                                                </ul>
+                                            </div>
+                                        ` : ''}
+                                        
+                                        ${event.proTip ? `
+                                            <div class="mt-3 p-3 rounded-lg border-l-4 pro-tip-card">
+                                                <p class="text-xs font-semibold text-sky-500 dark:text-sky-400 mb-1">Pro-Tip:</p>
+                                                <p class="text-xs text-content-secondary"><strong class="pro-tip-do">Do:</strong> ${event.proTip.move}</p>
+                                                <p class="text-xs text-content-secondary"><strong class="pro-tip-avoid">Avoid:</strong> ${event.proTip.avoid}</p>
+                                            </div>` : ''}
+                                        
+                                        ${challengeHTML}
+
+                                        ${event.mapLink ? `<a href="${event.mapLink}" target="_blank" class="map-button inline-flex items-center mt-3 text-xs font-semibold px-3.5 py-2 rounded-md transition-colors shadow-sm"><i class="fas fa-map-marked-alt mr-2"></i> View ${event.address && event.category !=='travel' ? event.action : 'Map'}</a>` : ''}
+                                    </div>
+                                </div>
+                            </details>`;
+                    });
+                    eventsHTML += '</div>';
+                    dayContentDiv.innerHTML = dayTitleHTML + eventsHTML;
+                    itineraryContent.appendChild(dayContentDiv);
+
+                    
+                    if (currentHash === dayHash) {
+                        setTimeout(() => { 
+                            const targetElement = document.getElementById(dayElementId);
+                            if (targetElement) {
+                                const headerOffset = 80; 
+                                const elementPosition = targetElement.getBoundingClientRect().top;
+                                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                                
+                                window.scrollTo({
+                                    top: offsetPosition,
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }, 50); 
+                    }
+                });
+            }
+            
+            renderDays(); 
+
+            window.addEventListener('hashchange', renderDays, false);
+
+            // Event delegation for event checklists and challenges
+            itineraryContent.addEventListener('change', (e) => {
+                if (e.target.type === 'checkbox' && (e.target.dataset.type === 'eventTask' || e.target.dataset.type === 'challenge')) {
+                    const itemId = e.target.dataset.id;
+                    const label = e.target.nextElementSibling;
+                    const iconEl = label.querySelector('i.far');
+                    const textEl = label.querySelector('span'); 
+
+                    savedEventStates[itemId] = e.target.checked;
+                    localStorage.setItem(eventStatesLocalStorageKey, JSON.stringify(savedEventStates));
+                    
+                    if (e.target.checked) {
+                        iconEl.classList.remove('fa-square', 'checklist-icon-unchecked');
+                        iconEl.classList.add('fa-check-square', 'checklist-icon-checked');
+                        if (textEl) textEl.classList.add('checklist-text-checked');
+                    } else {
+                        iconEl.classList.remove('fa-check-square', 'checklist-icon-checked');
+                        iconEl.classList.add('fa-square', 'checklist-icon-unchecked');
+                        if (textEl) textEl.classList.remove('checklist-text-checked');
+                    }
+                }
+            });
+
+
+            if (dayTabsContainer) { 
+                dayTabsContainer.addEventListener('click', function(e) {
+                    const targetTab = e.target.closest('.day-tab-button');
+                    if (!targetTab || !targetTab.href) return; 
+                    
+                     setTimeout(() => {
+                        targetTab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                    }, 0);
+                });
+            } else {
+                console.error("CRITICAL Error: dayTabsContainer element not found.");
+            }
+
+
+            document.getElementById('lastUpdated').textContent = `Last updated: ${new Date().toLocaleString('en-AU', { dateStyle: 'medium', timeStyle: 'short' })}`;
+        });
+    </script>
+</body>
+</html>
