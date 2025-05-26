@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Singapore Adventure</title>
+    <title>Reabal & Sabah's Singapore Adventure</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <style>
@@ -27,6 +27,8 @@
             --accent-emerald-dark: #34d399; /* emerald-400 */
             --accent-rose-dark: #f43f5e; /* rose-500 */
             --accent-blue-dark: #60a5fa; /* blue-400 */
+            --modal-overlay-dark: rgba(0, 0, 0, 0.7);
+            --modal-bg-dark: var(--card-bg-dark);
 
             --bg-light: #f1f5f9; /* slate-100 */
             --card-bg-light: #ffffff;
@@ -38,6 +40,8 @@
             --accent-emerald-light: #059669; /* emerald-600 */
             --accent-rose-light: #e11d48; /* rose-600 */
             --accent-blue-light: #3b82f6; /* blue-500 */
+            --modal-overlay-light: rgba(0, 0, 0, 0.5);
+            --modal-bg-light: var(--card-bg-light);
         }
 
         /* --- Dark Mode Styles --- */
@@ -58,8 +62,8 @@
         .dark-mode .budget-tag { background-color: var(--accent-emerald-dark); color: #064e3b; } /* emerald-400 bg, dark emerald text */
         .dark-mode .pro-tip-do, .dark-mode .challenge-title, .dark-mode .recommendation-title { color: var(--accent-emerald-dark); }
         .dark-mode .pro-tip-avoid { color: var(--accent-rose-dark); }
-        .dark-mode .map-button { background-color: var(--accent-emerald-dark); color: #064e3b; }
-        .dark-mode .map-button:hover { background-color: #6ee7b7; } /* emerald-300 */
+        .dark-mode .map-button, .dark-mode .gemini-button { background-color: var(--accent-emerald-dark); color: #064e3b; }
+        .dark-mode .map-button:hover, .dark-mode .gemini-button:hover { background-color: #6ee7b7; } /* emerald-300 */
         .dark-mode .checklist-icon-unchecked { color: var(--accent-sky-dark); }
         .dark-mode .checklist-icon-checked { color: var(--accent-emerald-dark); }
         .dark-mode .checklist-text-checked { color: var(--text-tertiary-dark); text-decoration: line-through; }
@@ -74,6 +78,10 @@
         .dark-mode .event-card-border-activity { border-left-color: #a855f7; } /* purple-500 */
         .dark-mode .event-card-border-info { border-left-color: #14b8a6; } /* teal-500 */
         .dark-mode .event-card-border-accommodation { border-left-color: #14b8a6; } /* teal-500 - Using same as info for now */
+        .dark-mode .modal-overlay { background-color: var(--modal-overlay-dark); }
+        .dark-mode .modal-content { background-color: var(--modal-bg-dark); color: var(--text-primary-dark); }
+        .dark-mode .modal-close-button { color: var(--text-secondary-dark); }
+        .dark-mode .modal-close-button:hover { color: var(--text-primary-dark); }
 
 
         /* --- Light Mode Styles --- */
@@ -94,8 +102,8 @@
         .light-mode .budget-tag { background-color: var(--accent-emerald-light); color: #ffffff; }
         .light-mode .pro-tip-do, .light-mode .challenge-title, .light-mode .recommendation-title { color: var(--accent-emerald-light); }
         .light-mode .pro-tip-avoid { color: var(--accent-rose-light); }
-        .light-mode .map-button { background-color: var(--accent-emerald-light); color: #ffffff; }
-        .light-mode .map-button:hover { background-color: #047857; } /* emerald-700 */
+        .light-mode .map-button, .light-mode .gemini-button { background-color: var(--accent-emerald-light); color: #ffffff; }
+        .light-mode .map-button:hover, .light-mode .gemini-button:hover { background-color: #047857; } /* emerald-700 */
         .light-mode .checklist-icon-unchecked { color: var(--accent-sky-light); }
         .light-mode .checklist-icon-checked { color: var(--accent-emerald-light); }
         .light-mode .checklist-text-checked { color: var(--text-tertiary-light); text-decoration: line-through; }
@@ -110,6 +118,10 @@
         .light-mode .event-card-border-activity { border-left-color: #8b5cf6; } /* violet-500 */
         .light-mode .event-card-border-info { border-left-color: #0d9488; } /* teal-600 */
         .light-mode .event-card-border-accommodation { border-left-color: #0d9488; } /* teal-600 */
+        .light-mode .modal-overlay { background-color: var(--modal-overlay-light); }
+        .light-mode .modal-content { background-color: var(--modal-bg-light); color: var(--text-primary-light); }
+        .light-mode .modal-close-button { color: var(--text-secondary-light); }
+        .light-mode .modal-close-button:hover { color: var(--text-primary-light); }
 
 
         /* --- General Styles --- */
@@ -136,6 +148,28 @@
         .detail-item { display: flex; align-items: flex-start; margin-bottom: 0.5rem; } 
         .detail-item i { margin-right: 0.75rem; width: 1rem; text-align: center; margin-top: 0.125rem; opacity: 0.8; } 
         .event-card-bg { border-left-width: 4px; }
+
+        /* Modal Styles */
+        .modal-hidden { display: none; }
+        .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center; z-index: 50; }
+        .modal-content { padding: 1.5rem; border-radius: 0.75rem; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); max-width: 90%; width: 500px; max-height: 80vh; overflow-y: auto; position: relative;}
+        .modal-close-button { position: absolute; top: 0.75rem; right: 0.75rem; background: none; border: none; font-size: 1.5rem; cursor: pointer; }
+        .modal-title { font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; }
+        .modal-body p { margin-bottom: 0.5rem; font-size: 0.875rem; line-height: 1.6; }
+        .modal-body strong { font-weight: 600; }
+        .gemini-button {
+            font-size: 0.75rem; /* text-xs */
+            font-weight: 600; /* font-semibold */
+            padding: 0.5rem 0.75rem; /* px-3 py-2 */
+            border-radius: 0.375rem; /* rounded-md */
+            transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+            display: inline-flex;
+            align-items: center;
+            margin-top: 0.75rem; /* mt-3 */
+        }
+        .gemini-button i { margin-right: 0.5rem; }
         
     </style>
 </head>
@@ -146,18 +180,31 @@
                 <i class="fas fa-sun"></i>
             </button>
             <h1 class="header-title text-4xl md:text-5xl font-extrabold mb-2">Singapore Adventure</h1>
-            <p class="header-subtitle text-xl md:text-2xl font-medium">Rey & Saby</p>
+            <p class="header-subtitle text-xl md:text-2xl font-medium">Reabal & Sabah</p>
             <p class="header-date text-md">May 28 - June 2, 2025</p>
         </header>
 
         <div id="keyInfoAccordion" class="mb-10 space-y-4"></div>
+        {/* Main Checklists Accordion has been removed from HTML as per user request */}
         <div id="simplifiedIconLegend" class="mb-8 p-4 md:p-5 legend-bg rounded-xl shadow-lg"></div>
         <div id="dayTabsContainer" class="mb-8 sticky top-0 z-10 sticky-header-bg py-3 -mx-4 px-4 shadow-md">
             <div class="flex space-x-2 overflow-x-auto pb-2 justify-center"></div>
         </div>
         <div id="itineraryContent" class="space-y-4"></div>
+
+        {/* Gemini Modal */}
+        <div id="geminiModal" class="modal-hidden modal-overlay">
+            <div class="modal-content">
+                <button id="closeGeminiModal" class="modal-close-button">&times;</button>
+                <h3 id="geminiModalTitle" class="modal-title text-sky-500 dark:text-sky-400">✨ Gemini's Suggestions</h3>
+                <div id="geminiModalBody" class="modal-body text-content-secondary">
+                    {/* Content will be injected by JS */}
+                </div>
+            </div>
+        </div>
+
         <footer class="text-center text-sm text-content-tertiary py-12 mt-12">
-            <p>Wishing you an amazing trip, Rey & Saby!</p>
+            <p>Wishing you an amazing trip, Reabal & Sabah!</p>
             <p id="lastUpdated" class="mt-1"></p>
         </footer>
     </div>
@@ -175,8 +222,11 @@
         // --- DATA (Ensure this is the complete, updated data structure) ---
         itineraryData.flightDetails = {
             confirmation: "MGE7VH", airline: "Scoot",
+            departing: { from: "Sydney (SYD)", to: "Singapore (SIN)", date: "Wed, May 28", flight: "TR3", time: "12:50 PM - 7:15 PM", duration: "8h 25m", class: "Economy", passengers: [{ name: "Sabah Naseema Shehzad", baggage: "1 personal item, 1 carry-on (10kg), 1 checked bag (20kg)" },{ name: "Reabal Ismail Najjar", baggage: "1 personal item, 1 carry-on (10kg), No checked bags" }] },
+            returning: { from: "Singapore (SIN)", to: "Sydney (SYD)", date: "Mon, Jun 2", flight: "TR12", time: "10:00 AM - 7:30 PM", duration: "7h 30m", class: "Economy", passengers: [{ name: "Sabah Naseema Shehzad", baggage: "1 personal item, 1 carry-on (10kg), 1 checked bag (20kg)" },{ name: "Reabal Ismail Najjar", baggage: "1 personal item, 1 carry-on (10kg), No checked bags" }] }
         };
         itineraryData.hotelDetails = {
+            name: "The Clan Hotel Singapore by Far East Hospitality", address: "10 Cross Street, Singapore 048417", phone: "+65 6881 8888", checkIn: "Wednesday, 28 May 2025 (15:00-00:00)", checkOut: "Monday, 2 June 2025 (12:00)", guestName: "Reabal Najjar", bookingDuration: "5 nights, 1 room", checkInNumbers: ["867336942", "2505221100308986297 (recommended)"], cost: "AUD 2,268.86 (Paid, Non-refundable)", meals: "Breakfast available at AUD 52 per person", cancellation: "From 10:59 on 22 May 2025: AUD 2,269 (Cancellation timeline in property's local time zone +08)",
             mapLink: "https://www.google.com/maps/place/The+Clan+Hotel+Singapore+by+Far+East+Hospitality/@1.2820509,103.8459572,17z"
         };
         itineraryData.grabRules = [
@@ -282,8 +332,8 @@
                 ]
             },
             { // DAY 1
-                day: 1, dateShort: "Thu 29", dateLong: "Thursday, 29 May", title: "Science, Skyline & Sensory Dining", // Updated title
-                daySummary: "Today, we blend intellectual curiosity with artistic flair! Explore the Science Centre, snap unique photos at Café Monochrome, marvel at Marina Bay Sands' art and views, and conclude with an extraordinary sensory dinner at NOX.", // Updated summary
+                day: 1, dateShort: "Thu 29", dateLong: "Thursday, 29 May", title: "Science, Skyline & Sensory Dining",
+                daySummary: "Today, we blend intellectual curiosity with artistic flair! Explore the Science Centre, snap unique photos at Café Monochrome, marvel at Marina Bay Sands' art and views, and conclude with an extraordinary sensory dinner at NOX.",
                 events: [
                      {
                         time: "08:30", action: "Hotel Breakfast / Local Kopi & Kaya Toast", quickInfo: "Morning Fuel!", category: "food", categoryIcon: "fas fa-mug-saucer",
@@ -758,6 +808,11 @@
             const themeToggle = document.getElementById('themeToggle');
             const body = document.body;
             const themeIcon = themeToggle.querySelector('i');
+            const geminiModal = document.getElementById('geminiModal');
+            const geminiModalTitle = document.getElementById('geminiModalTitle');
+            const geminiModalBody = document.getElementById('geminiModalBody');
+            const closeGeminiModalButton = document.getElementById('closeGeminiModal');
+
 
             // --- THEME TOGGLE ---
             const applyTheme = (theme) => {
@@ -861,6 +916,79 @@
             let savedEventStates = JSON.parse(localStorage.getItem(eventStatesLocalStorageKey)) || {};
 
 
+            // --- GEMINI API CALL FUNCTION ---
+            async function callGeminiAPI(prompt) {
+                geminiModalBody.innerHTML = '<p class="text-center"><i class="fas fa-spinner fa-spin mr-2"></i>Generating ideas...</p>';
+                geminiModal.classList.remove('modal-hidden');
+                
+                let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
+                const payload = { contents: chatHistory };
+                const apiKey = ""; // Left empty as per instructions for Canvas environment
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                try {
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    if (!response.ok) {
+                        throw new Error(`API request failed with status ${response.status}`);
+                    }
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        let text = result.candidates[0].content.parts[0].text;
+                        // Basic Markdown to HTML conversion (bold and lists)
+                        text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>'); // Bold
+                        text = text.replace(/^\* (.*$)/gm, '<li>$1</li>'); // Unordered list items
+                        text = text.replace(/(\r\n|\r|\n){2,}/g, '$1<br><br>'); // Paragraph breaks
+                        text = text.replace(/\n/g, '<br>'); // Single line breaks
+                        if (text.includes('<li>')) {
+                             text = '<ul>' + text.replace(/<br><li>/g, '<li>') + '</ul>'; // Wrap list items
+                        }
+                        geminiModalBody.innerHTML = text;
+                    } else {
+                        geminiModalBody.innerHTML = '<p>Sorry, I couldn\'t generate a response right now. Please try again later.</p>';
+                        console.error("Unexpected API response structure:", result);
+                    }
+                } catch (error) {
+                    console.error("Error calling Gemini API:", error);
+                    geminiModalBody.innerHTML = `<p>An error occurred: ${error.message}. Please check the console for details.</p>`;
+                }
+            }
+
+            // --- GEMINI FEATURE HANDLERS ---
+            function getAlternativeActivities(dayData) {
+                const plannedActivities = dayData.events.map(event => event.action).join(', ');
+                const prompt = `My partner and I are in Singapore. Today is ${dayData.dateLong} - themed as "${dayData.title}". Our planned activities for today are: ${plannedActivities}. If we have some extra time or an activity gets cancelled, suggest 2-3 alternative activities suitable for today's theme or nearby locations. For each suggestion, provide a short description (2-3 sentences) and why it would be a good fit for us. Format each suggestion with a bold title.`;
+                geminiModalTitle.textContent = "✨ Alternative Activity Ideas";
+                callGeminiAPI(prompt);
+            }
+
+            function generatePostcardMessage(eventName) {
+                const prompt = `My partner Sabah and I (Reabal) are at ${eventName} in Singapore. The view is incredible! Generate a short, fun, and loving postcard message (about 3-4 sentences) that we could send to friends or family back home, capturing the moment.`;
+                geminiModalTitle.textContent = "✨ Your Postcard Message";
+                callGeminiAPI(prompt);
+            }
+            
+            if(closeGeminiModalButton) {
+                closeGeminiModalButton.addEventListener('click', () => {
+                    geminiModal.classList.add('modal-hidden');
+                });
+            }
+             // Close modal if overlay is clicked
+            if(geminiModal){
+                geminiModal.addEventListener('click', function(event) {
+                    if (event.target === geminiModal) { // Check if the click is on the overlay itself
+                        geminiModal.classList.add('modal-hidden');
+                    }
+                });
+            }
+
+
             // --- POPULATE DAY TABS AND CONTENT ---
             function renderDays() {
                 if (!dayTabsContainer || !itineraryContent) {
@@ -927,6 +1055,11 @@
                                 </div>`;
                         }
 
+                         let geminiButtonHTML = '';
+                        if (event.action.includes("MBS SkyPark Observation Deck")) { // Specific event for postcard
+                            geminiButtonHTML = `<button class="gemini-button generate-postcard-btn" data-eventname="${event.action}"><i class="fas fa-magic-wand-sparkles"></i>Generate Postcard Message</button>`;
+                        }
+
 
                         eventsHTML += `
                             <details class="event-card-bg rounded-xl shadow-lg overflow-hidden ${categoryClass}" id="event-${dayData.day}-${eventIndex}">
@@ -982,12 +1115,18 @@
                                             </div>` : ''}
                                         
                                         ${challengeHTML}
-
+                                        ${geminiButtonHTML}
                                         ${event.mapLink ? `<a href="${event.mapLink}" target="_blank" class="map-button inline-flex items-center mt-3 text-xs font-semibold px-3.5 py-2 rounded-md transition-colors shadow-sm"><i class="fas fa-map-marked-alt mr-2"></i> View ${event.address && event.category !=='travel' ? event.action : 'Map'}</a>` : ''}
                                     </div>
                                 </div>
                             </details>`;
                     });
+                     // Add "Suggest Alternative Activities" button at the end of the day's events
+                    eventsHTML += `<div class="mt-6 text-center">
+                                     <button class="gemini-button suggest-alternatives-btn" data-dayindex="${index}">
+                                         <i class="fas fa-magic-wand-sparkles"></i>Feeling Spontaneous? Get Alternative Ideas!
+                                     </button>
+                                   </div>`;
                     eventsHTML += '</div>';
                     dayContentDiv.innerHTML = dayTitleHTML + eventsHTML;
                     itineraryContent.appendChild(dayContentDiv);
@@ -1009,6 +1148,20 @@
                         }, 50); 
                     }
                 });
+
+                // Add event listeners for newly created Gemini buttons
+                document.querySelectorAll('.suggest-alternatives-btn').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const dayIndex = parseInt(this.dataset.dayindex);
+                        getAlternativeActivities(itineraryData.days[dayIndex]);
+                    });
+                });
+                document.querySelectorAll('.generate-postcard-btn').forEach(button => {
+                    button.addEventListener('click', function() {
+                        generatePostcardMessage(this.dataset.eventname);
+                    });
+                });
+
             }
             
             renderDays(); 
